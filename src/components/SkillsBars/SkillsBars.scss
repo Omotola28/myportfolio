@@ -1,0 +1,64 @@
+.skillsBar {
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  top: 8em;
+  text-align: left;
+   
+}
+
+.skills {
+  margin: 0 0 30px 0;
+  padding: 0;
+  width: calc(100% - 100px);
+  li {
+    display: block;
+    position: relative;
+    background-color: #888;
+    color: #fff;
+    margin: 10px 0;
+    transition: width 300ms ease-in-out;
+    .collapsed & {
+      width: 0 !important;
+    }
+    p {
+      padding: 10px;
+      margin: 0;
+      font-weight: bold;
+    }
+    span {
+      position: absolute;
+      right: 10px;
+      display: inline-block;
+      width: 30px;
+      top: 11px;
+      text-align: right;
+      font-weight: normal;
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}
+
+// Pen specific styling
+body {
+  font-size: 13px;
+  background-color: #e7e7e7;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #ccc;
+  margin: 20px 0;
+  padding: 0;
+}
+
+small {
+  font-size: 11px;
+  color: #666;
+  a {
+    color: inherit;
+  }
+}

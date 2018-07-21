@@ -1,0 +1,31 @@
+#frame{
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    top: 5em;
+    left: 38em;
+    margin: auto;
+    
+	
+}
+
+#image{
+	position: absolute;
+    top: 2px;
+    right: 12.9%;
+    left: -11px;
+    margin: auto;
+    opacity: 0;
+    animation: changeOpacity 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
