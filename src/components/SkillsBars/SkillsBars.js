@@ -24,7 +24,7 @@ class SkillBars extends Component {
           {skills.map((skill, index) => 
             <li
               key={skill.type}
-              style={{ width: `${skill.level}%`, backgroundColor: `hsl(${hue}, ${saturation}%, ${100 / (index + 3.5) }%)` }}
+              style={{ width: `${skill.level}%`, backgroundColor: `hsl(${hue}, ${saturation}%, ${130 / (index + 3.5) }%)` }}
             >
               <p>{skill.type}<span>{skill.level}</span></p>
             </li>
