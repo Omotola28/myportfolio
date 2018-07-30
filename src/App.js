@@ -36,7 +36,7 @@ class App extends Component {
           <Route path="/skills" exact strict component={Skills}/>
           <Route path="/skills" exact strict render={(props) => <SkillBars {...props} hue={"49"} saturation={"100"} skills={SKILLS}/>}/>
           <Route path="/inbox" exact strict component={Contact}/>
-          <Route path="/inbox" exact strict component={Location}/>
+          <Route path="/inbox" exact strict render={(props) => <Location {...props} initialPosition={{lat: 53.487523,lng: -2.290126}} />}/>
           
         </div>
     );

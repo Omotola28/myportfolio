@@ -8,7 +8,7 @@ Map.propTypes = {
   initialCenter: PropTypes.object
 }
 Map.defaultProps = {
-  zoom: 13,
+  zoom: 10,
   // Salford, by default
   initialCenter: {
     lat: 53.487523,
@@ -18,38 +18,16 @@ Map.defaultProps = {
 
 class Map extends Component {
  
- componentDidUpdate(prevProps, prevState) {
-    if (prevProps.google !== this.props.google) {
-      this.loadMap();
-    }
+ render() {
+    const mapStyle = {
+      width: 500,
+      height: 300,
+      border: '1px solid black'
+    };
+    
+    return (
+      <div ref="map" style={mapStyle}>I should be a map!</div>
+    );
   }
- 
- loadMap() {
-       if (this.props && this.props.google) {
-      // google is available
-      const {google} = this.props;
-      const maps = google.maps;
-
-      const mapRef = this.refs.map;
-      const node = ReactDOM.findDOMNode(mapRef);
-
-      let {initialCenter, zoom} = this.props;
-      const {lat, lng} = initialCenter;
-      const center = new maps.LatLng(lat, lng);
-      const mapConfig = Object.assign({}, {
-        center: center,
-        zoom: zoom
-      })
-      this.map = new maps.Map(node, mapConfig);
-    }
-}
-
-	render(){
-		return(
-		  <div ref='map'>
-        Loading map...
-      </div>
-	);
-	}	
 }
 export default Map
