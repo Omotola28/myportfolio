@@ -1,39 +1,33 @@
-#page{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
+#page {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
-.container{
-	width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    opacity: 1;
-    top: 5%;
-    margin: 0 auto;
-    
-    
-}
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 1;
+  top: 5%;
+  margin: 0 auto; }
 
 .top-tags {
-    bottom: auto;
-    top: 0px;
-}
-.tags {
-    color: #515152;
-    position: absolute;
-    left: 80px;
-    font-size: 18px;
-    font-family: 'La Belle Aurore', cursive;
-}
+  bottom: auto;
+  top: 0px; }
 
-.bottom-tags{
-    color: #515152;
-    position: absolute;
-    bottom: 0px;
-    left: 50px;
-    font-size: 18px;
-    font-family: 'La Belle Aurore', cursive;
-}
+.tags {
+  color: #515152;
+  position: absolute;
+  left: 80px;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.bottom-tags {
+  color: #515152;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive; }

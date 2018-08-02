@@ -1,0 +1,40 @@
+#mapBox{
+	background: rgba(253, 234, 8, 0.1);
+    float: right;
+    width: 53%;
+    height: 100%;
+    margin-top: -3%;
+}
+
+#mapBox div:nth-child(2) {
+    height: 869px !important;
+}
+
+#map{
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.infoMap{
+	position: absolute;
+    background: #0b0b0b;
+    top: 16.3em;
+    z-index: 999999;
+    width: 226px;
+    padding: 20px;
+    color: #656567;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 0.5em;
+    text-align: left;
+    right: 30em;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
