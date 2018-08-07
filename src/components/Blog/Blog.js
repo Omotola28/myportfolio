@@ -1,32 +1,30 @@
-import React from 'react'
-import * as contentful from 'contentful'
+import React from 'react';
+import BlogItem from './BlogItem';
+import client from '../service/Client';
+
+
 
 class Blog extends React.Component {
-  state = {
-    posts: []
+  constructor(){
+    super()
+    this.state = {posts: []}
+
   }
-
-  client = contentful.createClient({
-  space: 'c3g21axvbohw',
-  accessToken: '311345dabb923032220faba79a42168a05143c20dd46e59477eee729fd2ddd6d' })
-
+  
+  
   componentDidMount() {
-    this.fetchPosts().then(this.setPosts);
-  }
-  fetchPosts = () => this.client.getEntries()
-  setPosts = response => {
-    this.setState({
-      posts: response.items
-    })
+      client.getEntries({content_type: 'post'}).then( response => {
+          this.setState({posts: response.items});
+  })
   }
   render() {
+    const posts = this.state.posts.map((post, i)=> <BlogItem key={i} id={i} post={post} />)
     return (
-      <div>
-		  <p>This is the Blog Page</p>
-		  <br/>
-		  { this.state.posts.map(({fields}, i) =>
-		    <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
-		  )}
+      <div className="category-page-posts animated fadeIn">
+         <div className="animated fadeIn">
+            {posts}
+         </div>
+		
       </div>
     )
   }

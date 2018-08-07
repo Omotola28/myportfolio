@@ -10,8 +10,10 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Location from './components/Location/Location';
 import Blog from './components/Blog/Blog';
-import Route from 'react-router-dom/Route';
-
+import BlogPost from './components/app/blog/BlogPost';
+import BlogItem from './components/Blog/BlogItem';
+import SingleBlogPost from './components/Blog/SingleBlogPost';
+import {Route, IndexRoute} from 'react-router-dom';
 import './App.css';
 
 const SKILLS = [
@@ -57,7 +59,10 @@ class App extends Component {
           <Route path="/skills" exact strict render={(props) => <SkillBars {...props} hue={"49"} saturation={"100"} skills={SKILLS}/>}/>
           <Route path="/inbox" exact strict component={Contact}/>
           <Route path="/inbox" exact strict render={(props) => <Location {...props} initialPosition={{lat: 53.487523,lng: -2.290126}} />}/>
-          <Route path="/blog" exact strict component={Blog}/>
+          <Route path="/blog" exact component={Blog}>
+            <IndexRoute component={BlogItem} />
+            <Route path='posts/:slug' component={SingleBlogPost}/>
+          </Route>
           
         </div>
     );
