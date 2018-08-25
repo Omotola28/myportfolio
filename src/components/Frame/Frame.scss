@@ -1,25 +1,18 @@
-#frame{
-    text-align: center;
-    z-index: 0;
-    position: relative;
-    top: 5em;
-    left: 35em;
-    margin: auto;
-    
-	
-}
-
 #image{
-	position: absolute;
-    top: 2px;
-    right: 12.9%;
-    left: -11px;
+	  position: absolute;
+    top: 0.1em;
+    left:0.2em;
     margin: auto;
     opacity: 0;
     animation: changeOpacity 3s;
     animation-fill-mode: forwards;
 }
 
+.frame-Pos {
+  position: relative;
+  top:4em;
+  left: 6em;
+}
 
 @keyframes changeOpacity {
   0% {
