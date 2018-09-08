@@ -398,12 +398,12 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .hero-body {
-    border-bottom: 2px solid #ffdd57;
+    border-bottom: 2px solid #f4c900;
     background-color: white;
 }
 
 #backslash{
-  color: #ffdd57;
+  color: #f4c900;
   font-size:1.5em;
 }
 
@@ -416,3 +416,44 @@ a[href^="https://maps.google.com/maps"] {
 .content > h1{
   font-family: 'Oswald';
 }
+
+.scrollBar::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.scrollBar::-webkit-scrollbar
+{
+  width: 2.5px;
+  background-color: #e7e7e7;
+}
+
+.scrollBar::-webkit-scrollbar-thumb
+{
+  background-color: #f4c900;
+}
+
+/*Single Blog post */
+.commentBox {
+  margin: 0.5em;
+}
+
+.commentBoxScroll{
+    height: 680px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.textarea:active, .textarea:focus { 
+    border-color: #a3a6ab !important ;
+}
+
+.button:focus, .button:active {
+  border-color: #a3a6ab !important ;
+}
+
+.control > input[type='text'] {
+      background-color: white;
+}
+

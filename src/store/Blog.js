@@ -13,9 +13,9 @@ export function loadBlog() {
 
   return dispatch => {
   	dispatch(actions.blogLoading())
-  	return client.getEntries({content_type: 'post'})
+  	return client.getEntries({content_type: 'post', order: 'sys.createdAt'})
       .then(({items}) => {
-      	setTimeout(() => dispatch(actions.loadBlogSuccess(items)), 5000)
+      	setTimeout(() => dispatch(actions.loadBlogSuccess(items)), 1000)
       })
       .catch(error =>{
       	console.log(error)
