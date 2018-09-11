@@ -5,6 +5,7 @@ import Skills from './../Skills';
 import About from './../About.js';
 import Contact from './../Contact';
 import Blog from './../Blog';
+import Projects from './../Projects';
 import SingleBlogPost from './../blog/SingleBlogPost';
 
 
@@ -16,6 +17,7 @@ const Router = () => {
           <Route path="/about" exact strict component={About}/>
           <Route path="/skills" exact strict component={Skills}/>
           <Route path="/inbox" exact strict component={Contact}/>
+          <Route path="/code" exact component={Projects}/>
           <Route path="/blog" exact component={Blog}/>
           <Route path="/blog/:slug" exact component={SingleBlogPost}/>
  	 </Switch>

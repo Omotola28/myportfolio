@@ -19,9 +19,8 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-         <PageHeader color="hero is-small" title="Simply Blogging" >
+         <PageHeader color="hero is-small" title="Simply Blogging" addonText="Timeless Journalling">
          </PageHeader>
-         {console.log(this.props.limit)}
          { this.props.blog.loading 
            ?<Loader className="has-text-primary"></Loader>
            : <PageContent className="scrollBar">

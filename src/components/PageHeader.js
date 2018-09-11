@@ -8,7 +8,7 @@ const PageHeader = (props) => {
             <h1 className="title">
               {props.title}
               <span id="backslash">{` //`}</span>
-              <span id="journalFont">Timeless Journalling</span>
+              <span id="journalFont">{props.addonText}</span>
             </h1>
           </div>
         </div>
