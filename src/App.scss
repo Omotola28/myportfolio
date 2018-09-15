@@ -411,7 +411,7 @@ a[href^="https://maps.google.com/maps"] {
   font-family: 'La Belle Aurore';
 }
 
-/*Blog Contente*/
+/*Blog Content*/
 
 .content > h1{
   font-family: 'Oswald';
@@ -432,6 +432,10 @@ a[href^="https://maps.google.com/maps"] {
 .scrollBar::-webkit-scrollbar-thumb
 {
   background-color: #f4c900;
+}
+
+.post-margin{
+  margin: 0 0.5em 0 16em;
 }
 
 /*Single Blog post */
@@ -455,5 +459,11 @@ a[href^="https://maps.google.com/maps"] {
 
 .control > input[type='text'] {
       background-color: white;
+}
+
+/*Projects page*/
+.projectsBox{
+  margin: 0 9em;
+  max-width: none;
 }
 

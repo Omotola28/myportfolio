@@ -13,7 +13,7 @@ export function loadBlog() {
 
   return dispatch => {
   	dispatch(actions.blogLoading())
-  	return client.getEntries({content_type: 'post', order: 'sys.createdAt'})
+  	return client.getEntries({content_type: 'post', order: 'sys.createdAt', 'fields.category': 'Learn'})
       .then(({items}) => {
       	setTimeout(() => dispatch(actions.loadBlogSuccess(items)), 1000)
       })
