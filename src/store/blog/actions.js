@@ -3,6 +3,7 @@
 */
 import * as types from './types'
 
+
 export function blogLoading(isLoading = true) {
   return { type: types.BLOG_LOADING, isLoading}
 }
@@ -16,3 +17,9 @@ export function onLoadMore(add=5) {
 
 	return { type: types.LOAD_MORE, add}
 }
+
+export function handleFilter(filter) {
+	return { type: types.FILTER, filter}
+}
+
+

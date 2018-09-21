@@ -19,11 +19,11 @@ class Projects extends React.Component {
                              an science related topic. The came was built with Java, JavaFX, using design patterns like Factory,
                              Command, Delegation etc. </p>
                              <figure className="image is-4by3">
-                               <img src={GameImage}/>
+                               <img alt='Photosynthesis game' src={GameImage}/>
                              </figure>
                              <footer className="card-footer">
                                 <p className="card-footer-item">
-                                  <a href="https://github.com/Omotola28/Photosynthesis-Game" target='_blank' rel='noopener' className="button is-medium">
+                                  <a href="https://github.com/Omotola28/Photosynthesis-Game" target='_blank' rel='noopener noreferrer' className="button is-medium">
                                      <span className="icon is-medium">
                                        <i className="fab fa-github"></i>
                                      </span>
@@ -49,11 +49,11 @@ class Projects extends React.Component {
                              <p className="subtitle has-text-justified">This website was built using HTML&CSS , Javascript and PHP. It is an advertisement website,
                              where users can register and upload their products for other users to purchase. Second year client server course work</p>
                              <figure className="image">
-                               <img src={Website}/>
+                               <img alt="Websie=te gif" src={Website}/>
                              </figure>
                              <footer className="card-footer">
                                 <p className="card-footer-item">
-                                  <a href="https://github.com/Omotola28/Advertisement-Website" target='_blank' rel='noopener' className="button is-medium">
+                                  <a href="https://github.com/Omotola28/Advertisement-Website" target='_blank' rel='noopener noreferrer' className="button is-medium">
                                      <span className="icon is-medium">
                                        <i className="fab fa-github"></i>
                                      </span>

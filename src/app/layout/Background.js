@@ -3,7 +3,7 @@ import React from 'react';
 const Background = () => {
 	return(
 		   <div className= 'background'>
-		   	 <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+		   	 <span className="bg-tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
 
 		   	  <span className="bottom-tags">
 			      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
