@@ -899,11 +899,17 @@ a[href^="https://maps.google.com/maps"] {
     font-size: 10px !important; } }
 
 @media screen and (min-width: 2559px) {
+  .navBar {
+    width: 90px; }
   #image {
     width: 650px; }
   #aboutBox {
     left: 6em;
-    font-size: 30px; }
+    font-size: 30px;
+    top: 12em; }
+  #aboutBox h1:nth-child(1)::after {
+    margin-top: 4em;
+    margin-left: -14em; }
   .frame-Pos {
     top: 37em;
     left: 10em; }
@@ -920,7 +926,7 @@ a[href^="https://maps.google.com/maps"] {
   .skills li span {
     font-size: 35px; }
   .f1 {
-    font-size: 5em; }
+    font-size: 2em !important; }
   #skillsBox {
     font-size: 30px;
     top: 18em;
@@ -929,10 +935,10 @@ a[href^="https://maps.google.com/maps"] {
     top: 42em; }
   #skillsBox h1:nth-child(1)::after {
     margin-top: 3.5em;
-    margin-left: -26em; }
+    margin-left: -28em; }
   .projectsBox {
     margin: 0 6em 0 9em;
-    height: 1200px; }
+    height: 1620px; }
   .subtitle {
     font-size: 2.5em; }
   .title {
@@ -943,4 +949,24 @@ a[href^="https://maps.google.com/maps"] {
     top: 49em; }
   .infoMap {
     top: 55em;
-    right: 48em; } }
+    right: 48em; }
+  #blogBox, #singlePost {
+    max-width: 1900px; }
+  #blogBox, #singlePost {
+    height: 1620px !important; }
+  .button.is-large {
+    font-size: 2rem; }
+  .button.is-medium {
+    font-size: 2.5rem; }
+  .media-content {
+    font-size: 27px; }
+  .image img {
+    margin: 2.5em 0; }
+  .tag:not(body).is-large {
+    font-size: 2.5rem; }
+  .is-size-6 {
+    font-size: 3rem !important; }
+  .columns.is-mobile > .column.is-three-fifths {
+    width: 70%; }
+  .menu-list a {
+    font-size: 2em; } }
