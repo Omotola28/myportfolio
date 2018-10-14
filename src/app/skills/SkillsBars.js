@@ -26,7 +26,7 @@ class SkillBars extends Component {
                 key={skill.type}
                 style={{ width: `${skill.level}%`, backgroundColor: `hsl(${hue}, ${saturation}%, ${130 / (index + 3.5) }%)` }}
               >
-                <p>{skill.type}<span>{skill.level}</span></p>
+                <p id="skillBarMobile">{skill.type}<span>{skill.level}</span></p>
               </li>
             )}
           </ul>

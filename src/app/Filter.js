@@ -9,7 +9,7 @@ class Filter extends React.Component {
 
 	render(props){
 			return(
-				<div className='level column'>
+				<div className='level column' id="filterCat">
 					<h1 className="title has-text-right level-item">
 					   Filter Post
 					</h1>	

@@ -11,13 +11,6 @@
   font-size: 3.5em;
 }
 
-/*Background.css
-.background {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto; }
-*/
-
 .top-tags {
   bottom: auto;
   top: 0px; }
@@ -466,4 +459,919 @@ a[href^="https://maps.google.com/maps"] {
   margin: 0 9em;
   max-width: none;
 }
+
+/****************************************************/
+/*                  MEDIA QUERIES                   */
+/****************************************************/
+
+@media (max-width: 350.1px) {
+    //General
+    body, html, .navBar {
+        width: 66.8vh;
+    }
+
+    //Homepage
+    #image, embed {
+      display: none;
+    }
+
+    .App {
+      min-height: 140vh;
+    }
+
+    .tag:not(body).is-large {
+       font-size: 1em;
+    }
+
+    .navBar{
+      min-height: 0;
+      height: 4em
+    }
+
+    .navBar nav {
+      display: flex;
+      height: 0;
+      margin-top: 0;
+      top: 0;
+    }
+
+    .navBar nav a {
+      margin: 0 1.5em;
+    }
+
+    .bg-tags{
+      left: -10px;
+      top: 4em;
+    }
+
+    .bottom-tags{
+      left: -30px;
+      bottom: -11em;
+    }
+
+    .leftZone {
+      left: 0;
+      top: 22em;
+    }
+
+    .fontS{
+      font-size: 2.6em;
+    }
+
+    .textZone h1:nth-child(3)::after{
+      position: absolute;
+      margin-top: 15px;
+    } 
+
+    //About Page
+    #aboutBox {
+      left: 3em;
+      width: 110%;
+    }
+
+    //Skills Page
+    #skillsBox{
+      width: 100%;
+      top: 8em;
+      left: 2.5em;
+    }
+
+    .skillsBar {
+        top: 33em;
+        left: 3em;
+    }
+
+    .skillsBar > h1 {
+        display: none; 
+    }
+
+    //Projects Page
+    .projectsBox {
+      margin: 0;
+      height: 710px;
+    }
+
+    .title{
+      font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif;
+    }
+
+    .hero-body{
+      padding-top: 4em !important;
+    }
+
+    //Contact Page
+    #mapBox{
+      display: none;
+    }
+
+    #contactBox {
+      width: 125%;
+      top: 15em;
+      left: 1em;
+    }
+
+    //Blog Page
+  .tags:last-child {
+    margin-bottom: 1em;
+    margin-right: 2em;
+  }
+
+  .post-margin {
+    margin: 0;
+  }
+
+  #blogBox{
+    height: 635px;
+  }
+
+  #filterCat {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #filterCat > h1 {
+    display: none;
+  }
+
+  #singlePost{
+    margin: 0 !important;
+    display: block;
+  }
+
+  .media{
+    display: block;
+  }
+
+  .ma5{
+    margin: 0 !important;
+  }
+
+  .menu-list a {
+    padding: 0.1em 0.75em;
+    text-align: left;
+    font-size: 1em !important;
+  }
+
+  .externalLinks{
+    display: none !important;
+  }
+
+}
+
+@media (min-width: 351px) and (max-width: 376px ){
+//General
+    body, html, .navBar {
+        width: 66.8vh;
+    }
+
+    .image img{
+      width: 80%;
+    }
+
+    .f1 {
+       font-size: 1.5em !important;
+       font-weight: bold;
+    }
+
+    //Homepage
+    #image, embed {
+      display: none;
+    }
+
+    .App {
+      min-height: 140vh;
+    }
+
+    .navBar{
+      min-height: 0;
+      height: 4em
+    }
+
+    .navBar nav {
+      display: flex;
+      height: 0;
+      margin-top: 0;
+      top: 0;
+    }
+
+    .navBar nav a {
+      margin: 0 1.5em;
+    }
+
+    .leftZone {
+      left: 0;
+      top: 22em;
+    }
+
+    .fontS{
+      font-size: 2.6em;
+    }
+
+    .bg-tags{
+        left: -10px;
+        top: 4em;
+    }
+    
+    .textZone h1:nth-child(3)::after{
+      position: absolute;
+      margin-top: 15px;
+    } 
+
+    .bottom-tags {
+      left: -30px;
+      bottom: -4em;
+    }
+
+    //About Page
+    #aboutBox{
+      left: 0.5em;
+      width: 109%;
+    }
+
+    #aboutBox h1:nth-child(1)::after {
+      margin-top: 1.2em;
+      margin-left: -4.5em;
+    }
+
+    //Skills Page
+    .skillsBar {
+      top: 28em;
+      left: 3em;
+    }
+
+    #skillsBox h1:nth-child(1)::after {
+      margin-top: 1.2em;
+      margin-left: -9em;
+    }
+
+    .skillsBar > h1 {
+        display: none; 
+    }
+
+
+    //Projects page
+    .projectsBox {
+      margin: 0;
+      height: 590px;
+    }
+
+    .title{
+      font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif;
+    }
+
+    .hero-body{
+      padding-top: 4em !important;
+    }
+
+    .tags:last-child {
+       margin-bottom: 1em;
+       margin-right: 2em;
+    }
+
+    //Contact Page
+    #contactBox {
+      left: 2em;
+      width: 100%;
+      top: 15em;
+    }
+
+    #mapBox{
+      display: none;
+    }
+
+    #contactBox h1:nth-child(1)::after {
+        margin-top: 1.4em;
+        margin-left: -6em;
+    }
+
+    #singlePost {
+      height: 635px !important;
+      margin: 0 !important;
+      display: block;
+
+    }
+
+    //Skills Page
+    #skillsBox{
+      width: 100%;
+      top: 8em;
+      left: 2.5em;
+    }
+
+    #skillBarMobile {
+      font-size: small;
+      padding: 2px;
+    }
+
+    .skills li span {
+      top: 1px !important;
+    }
+
+    //Blog
+
+    #blogBox {
+      height: 520px;
+    }
+
+    .post-margin {
+       margin: 0;
+    }
+
+    #filterCat {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #filterCat > h1 {
+      display: none;
+    }
+
+    .tag:not(body).is-large {
+       font-size: 0.8em;
+    }
+
+    .content h1 {
+      font-size: 1.5em;
+    }
+
+    .media{
+      display: block;
+    }
+
+    .ma5{
+      margin: 0 !important;
+    }
+
+    .menu-list a {
+      padding: 0.1em 0.75em;
+      text-align: left;
+      font-size: 1em !important;
+    }
+
+    .externalLinks{
+      display: none !important;
+    }
+
+}
+
+@media (min-width: 377px) and (max-width: 600px ){
+//General
+    body, html, .navBar {
+        width: 66.8vh;
+    }
+
+    .image img{
+      width: 80%;
+    }
+
+    .bg-tags, .bottom-tags{
+
+      font-size: 15px;
+    }
+
+    .f1 {
+       font-size: 1.5em !important;
+       font-weight: bold;
+    }
+
+    //Homepage
+    #image, embed {
+      display: none;
+    }
+
+    .App {
+      min-height: 140vh;
+    }
+
+    .navBar{
+      min-height: 0;
+      height: 4em
+    }
+
+    .navBar nav {
+      display: flex;
+      height: 0;
+      margin-top: 0;
+      top: 0;
+    }
+
+    .navBar nav a {
+      margin: 0 1.5em;
+    }
+
+    .leftZone {
+      left: 0;
+      top: 19em;
+    }
+
+    .fontS{
+      font-size: 2.6em;
+    }
+
+    .bg-tags{
+        left: -10px;
+        top: 4em;
+    }
+    
+    .textZone h1:nth-child(3)::after{
+      position: absolute;
+      margin-top: 15px;
+    } 
+
+    .bottom-tags {
+      left: -30px;
+    }
+
+    //About 
+    #aboutBox{
+     left: 0.5em;
+     width: 95%;
+     top: 8.5em;
+    }
+
+    #aboutBox::before, #aboutBox h1:nth-child(1)::after,
+    #skillsBox::before, #skillsBox h1:nth-child(1)::after {
+      font-size: 14px !important;
+    }
+
+    //Skills Page
+    #skillBarMobile {
+      font-size: x-small;
+      padding: 2px;
+    }
+
+    #skillsBox h1:nth-child(1)::after{
+        margin-top: 1.8em;
+        margin-left: -12em;
+    }
+
+    #skillsBox {
+      width: 90% !important;
+      top: 10em !important;
+    }
+
+    #aboutBox h1:nth-child(1)::after,
+    #contactBox h1:nth-child(1)::after{
+      margin-top: 1.8em;
+      margin-left: -6em;
+    }
+
+    .skills li span {
+      top: 1px !important;
+    }
+
+    .skillsBar {
+      top: 28em;
+      left: 3em;
+    }
+
+    .skillsBar > h1 {
+        display: none; 
+    }
+
+    //Projects Page
+    .projectsBox {
+      margin: 0;
+      height: 500px !important;
+    }
+
+    .title{
+      font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif;
+    }
+
+    .hero-body{
+      padding-top: 4em !important;
+    }
+
+    .tags:last-child {
+       margin-bottom: 1em;
+       margin-right: 2em;
+    }
+
+    //Contact Page
+    #contactBox {
+        left: 0em;
+        width: 100%;
+        top: 11em;
+    }
+
+    #mapBox{
+      display: none;
+    }
+
+    .mh0{
+      margin-top: 2em;
+    }
+
+    //Blog Page
+    #blogBox {
+      height: 440px;
+    }
+
+    .content h1 {
+      font-size: 1.5em;
+    }
+
+    .tag:not(body).is-large {
+       font-size: 0.8em;
+    }
+
+    #singlePost {
+      height: 548px !important;
+      margin: 0 !important;
+      display: block;
+
+    }
+
+    #skillsBox{
+      width: 100%;
+      top: 8em;
+      left: 2.5em;
+    }
+
+    .post-margin {
+       margin: 0;
+    }
+
+    #filterCat {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #filterCat > h1 {
+      display: none;
+    }
+
+    .media{
+      display: block;
+      padding: 1em;
+    }
+
+    .ma5{
+      margin: 0 !important;
+    }
+
+    .menu-list a {
+      padding: 0.1em 0.75em;
+      text-align: left;
+      font-size: 1em !important;
+    }
+
+    .externalLinks{
+      display: none !important;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+.columns:not(.is-desktop){
+    .textZone{
+      font-size: xx-small !important;
+      top: 23em;
+    }
+
+    #skillsBox{
+      width: 80%;
+      top:2em;
+    }
+
+    #skillsBox > h1, .skillsBar > h1{
+      font-size: 2em;
+    }
+
+    #skillsBox h1:nth-child(1)::after {
+        margin-top: 1.8em;
+        margin-left: -12em;
+    }
+
+    .skills li p {
+      padding: 6px;
+    }
+
+    .skillsBar {
+      left: 10em;
+      top: 15em;
+    }
+
+    #image {
+      width: 192px;
+    }
+    .frame-Pos {
+      top: 13em;
+      left: 10em;
+    }
+
+    #aboutBox{
+      width: 50%;
+      top: 4em;
+    }
+
+    #aboutBox h1:nth-child(1)::after {
+        margin-top: 1.8em;
+        margin-left: -6em;
+    }
+
+    .f1 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .projectsBox {
+        margin: 0 0em 0 6em;
+        height: 500px;
+    }
+
+    #mapBox {
+      display: none;
+    }
+
+    #contactBox {
+      width: 75%;
+    }
+
+    .post-margin {
+        margin: 0 10em 0 5em;
+    }
+
+     #filterCat {
+       position: relative;
+       right: -49em;
+       top: -38em;
+       width: 20%;
+       padding: 0;
+       margin: 0;
+    }
+
+    #blogBox{
+      height: 500px;
+    }
+
+    .box .media {
+      display: block;
+      width: 88%;
+    }
+
+    #filterCat > h1 {
+      word-break: unset;
+      font-size: 1.5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .tag:not(body).is-large {
+        font-size: 0.82em;
+    }
+
+    #singlePost{
+      height: 630px !important;
+      margin: 0 0 0 5em !important;
+      width: 65%;
+    }
+
+   
+   #singlePost .media-content{
+     display: block;
+     position: relative;
+     top: 4em;
+     right: 5em;
+     text-align: justify;
+   }
+
+   .content {
+     width: 115%;
+   }
+
+   .content > h1{
+     font-size: 1.5em;
+   }
+
+   .ma5{
+     margin: 0.5em 0;
+   }
+
+   .is-size-3{
+     font-size: 14px;
+   }
+
+   .material-icons{
+     font-size: 10px;
+   }
+
+   .externalLinks{
+     font-size: 10px !important;
+   }
+}
+}
+@media screen and (min-width: 801px) and (max-width: 1025px){
+
+  #aboutBox {
+    font-size: 13px;
+    top: 8em !important;
+  }
+
+  #image {
+    width: 257px;
+  }
+
+  #contactBox {
+    top: 12em !important;
+  }
+
+  .frame-Pos{
+    top: 17em;
+    left: 8em;
+  }
+
+  .skillsBar {
+    top: 19em;
+  }
+
+  .projectsBox {
+    margin: 0 2em 0 7em;
+  }
+
+  .infoMap{
+    right: 16em;
+  }
+
+  .leftZone {
+    top: 20em !important;
+    left: 7em;
+  }
+
+  .post-margin {
+    margin: 0 13em 0 5em;
+  }
+
+  #blogBox{
+    height: 710px;
+  }
+
+  #filterCat {
+    position: relative;
+    right: -64em;
+    top: -53em;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #filterCat > h1 {
+    word-break: unset;
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #singlePost{
+    height: 850px !important;
+    margin: 0px 1em 0px 6em !important;
+  }
+
+  .ma5{
+    margin: 0.5em 0 !important;
+  }
+
+  .is-size-3{
+    font-size: 14px !important;
+  }
+
+  .externalLinks{
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1535px){
+
+     .leftZone{
+       top:29em;
+     }
+
+     #image{
+       width: 365px;
+     }
+
+     #aboutBox{
+       top: 25em;
+     }
+
+     .frame-Pos {
+       top: 17em;
+     }
+
+     .skillsBar {
+       top:27em;
+     }
+
+     .projectsBox{
+       height: 700px;
+     }
+
+     #mapBox div:nth-child(2) {
+         height: 1060px !important;
+     }
+
+     .infoMap{
+       top: 27em;
+     }
+
+     #contactBox{
+       top: 20em;
+     }
+
+     #blogBox, #singlePost {
+       height: 920px;
+     }
+
+     .externalLinks{
+       font-size: 10px !important;
+     }
+ }
+
+ @media screen and (min-width: 2559px){
+
+   #image{
+     width: 650px;
+   }
+
+   #aboutBox {
+     left: 6em;
+     font-size: 30px;
+   }
+
+   .frame-Pos {
+     top: 37em;
+     left: 10em;
+   }
+
+   .fontS {
+       font-size: 8em;
+   }
+
+   .textZone > h2 {
+     font-size: 25px;
+   }
+
+   .pseudoBtn{
+     font-size: 25px;
+   }
+
+   .leftZone{
+     top: 50em;
+   }
+
+   .skills li p {
+     font-size: 40px;
+   }
+
+   .skills li span {
+     font-size: 35px;
+   }
+
+   .f1{
+     font-size: 5em;
+   }
+
+   #skillsBox{
+     font-size: 30px;
+     top: 18em;
+     left: 5em;
+   }
+
+   .skillsBar {
+       top: 42em;
+   }
+
+   #skillsBox h1:nth-child(1)::after {
+     margin-top: 3.5em;
+     margin-left: -26em;
+   }
+
+   .projectsBox {
+     margin: 0 6em 0 9em;
+     height: 1200px;
+   }
+
+   .subtitle{
+     font-size: 2.5em;
+   }
+
+   .title{
+     font-size: 3em;
+   }
+   
+   #mapBox div:nth-child(2) {
+       height: 1850px !important;
+   }  
+
+   #contactBox{
+     top:49em;
+   }
+
+   .infoMap{
+     top: 55em;
+     right: 48em;
+   }
+ } 
+
 

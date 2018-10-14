@@ -4,7 +4,7 @@ import Background from './layout/Background';
 
 const Introduction = () => {
 	return(
-		<div className='columns'>
+		<div className='columns is-mobile'>
 		   <Background/>
 		   <div className="column is-half">
 		       <div className="tl pa3 textZone lineH leftZone">

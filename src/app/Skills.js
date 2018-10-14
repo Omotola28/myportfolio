@@ -3,7 +3,7 @@ import SkillBars from './skills/SkillsBars';
 import Background from './layout/Background';
 
 const SKILLS = [
-  {type: "Communication", level: 60},
+  {type: "Communication", level: 20},
   {type: "HTML", level: 50},
   {type: "CSS", level: 52},
   {type: "JavaScript", level: 42},
@@ -14,7 +14,7 @@ const SKILLS = [
 
 const Skills = () => {
 	return(
-		<div className="columns">
+		<div className="columns is-full-mobile">
 			<Background/>
 			<div className="column is-half">
 				<div className='tl pa3 textZone w-40 leftZone' id='skillsBox'>

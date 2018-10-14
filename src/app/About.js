@@ -5,7 +5,7 @@ import Background from './layout/Background';
 
 const About = () => {
 	return(
-		<div className='columns'>
+		<div className='columns is-mobile'>
 		   <Background/>
 		   <div className='column is-half'>
 			   	<div className='tl pa3 w-40 textZone leftZone' id='aboutBox'>
