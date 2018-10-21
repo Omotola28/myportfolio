@@ -432,26 +432,8 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 /*Single Blog post */
-.commentBox {
-  margin: 0.5em;
-}
-
-.commentBoxScroll{
-    height: 680px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.textarea:active, .textarea:focus { 
-    border-color: #a3a6ab !important ;
-}
-
-.button:focus, .button:active {
-  border-color: #a3a6ab !important ;
-}
-
-.control > input[type='text'] {
-      background-color: white;
+.externalLinks {
+  font-size: 12px !important;
 }
 
 /*Projects page*/
@@ -1241,7 +1223,7 @@ a[href^="https://maps.google.com/maps"] {
   }
 }
 
-@media screen and (min-width: 1026px) and (max-width: 1535px){
+@media screen and (min-width: 1026px) and (max-width: 1532px){
 
      .leftZone{
        top:29em;
