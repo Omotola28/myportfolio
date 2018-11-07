@@ -427,13 +427,31 @@ a[href^="https://maps.google.com/maps"] {
 /****************************************************/
 /*                  MEDIA QUERIES                   */
 /****************************************************/
-@media (max-width: 350.1px) {
-  body, html, .navBar {
-    width: 66.8vh; }
+@media (max-width: 320.1px) {
+  #home .material-icons.md-30,
+  #about .material-icons.md-30,
+  #skills .material-icons.md-30,
+  #code .material-icons.md-30,
+  #inbox .material-icons.md-30,
+  #blog .material-icons.md-30 {
+    font-size: 25px; }
   #image, embed {
     display: none; }
   .App {
-    min-height: 140vh; }
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  #home::after,
+  #about::after,
+  #skills::after,
+  #code::after,
+  #inbox::after,
+  #blog::after {
+    height: 67px; }
   .tag:not(body).is-large {
     font-size: 1em; }
   .navBar {
@@ -445,36 +463,43 @@ a[href^="https://maps.google.com/maps"] {
     margin-top: 0;
     top: 0; }
   .navBar nav a {
-    margin: 0 1.5em; }
+    float: left;
+    margin-left: 0 !important;
+    line-height: 70px;
+    height: 60px;
+    width: 20%; }
   .bg-tags {
     left: -10px;
     top: 4em; }
   .bottom-tags {
-    left: -30px;
-    bottom: -11em; }
+    left: -1.8em;
+    bottom: 0;
+    position: fixed; }
   .leftZone {
     left: 0;
-    top: 22em; }
+    top: 14em; }
   .fontS {
-    font-size: 2.6em; }
+    font-size: 2.3em; }
   .textZone h1:nth-child(3)::after {
     position: absolute;
     margin-top: 15px; }
   #aboutBox {
-    left: 3em;
-    width: 110%; }
+    left: 0.1em;
+    top: 8em;
+    width: 100%;
+    padding-bottom: 58px; }
   #skillsBox {
     width: 100%;
-    top: 8em;
-    left: 2.5em; }
+    top: 8em; }
   .skillsBar {
     top: 33em;
-    left: 3em; }
+    left: 1em; }
   .skillsBar > h1 {
     display: none; }
   .projectsBox {
-    margin: 0;
-    height: 710px; }
+    margin: 0 !important;
+    min-height: 600px;
+    position: absolute; }
   .title {
     font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif; }
   .hero-body {
@@ -482,38 +507,26 @@ a[href^="https://maps.google.com/maps"] {
   #mapBox {
     display: none; }
   #contactBox {
-    width: 125%;
-    top: 15em;
-    left: 1em; }
-  .tags:last-child {
-    margin-bottom: 1em;
-    margin-right: 2em; }
+    width: 100%;
+    top: 7em; }
   .post-margin {
-    margin: 0; }
-  #blogBox {
-    height: 635px; }
+    margin: 0 !important;
+    position: absolute;
+    min-height: 1200px; }
   #filterCat {
-    display: flex;
-    flex-wrap: wrap; }
-  #filterCat > h1 {
     display: none; }
   #singlePost {
     margin: 0 !important;
-    display: block; }
+    display: block;
+    width: 102%;
+    position: absolute;
+    min-height: 1200px; }
   .media {
     display: block; }
   .ma5 {
-    margin: 0 !important; }
-  .menu-list a {
-    padding: 0.1em 0.75em;
-    text-align: left;
-    font-size: 1em !important; }
-  .externalLinks {
-    display: none !important; } }
+    display: none; } }
 
-@media (min-width: 351px) and (max-width: 376px) {
-  body, html, .navBar {
-    width: 66.8vh; }
+@media (min-width: 321px) and (max-width: 376px) {
   .image img {
     width: 80%; }
   .f1 {
@@ -522,7 +535,13 @@ a[href^="https://maps.google.com/maps"] {
   #image, embed {
     display: none; }
   .App {
-    min-height: 140vh; }
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   .navBar {
     min-height: 0;
     height: 4em; }
@@ -532,10 +551,11 @@ a[href^="https://maps.google.com/maps"] {
     margin-top: 0;
     top: 0; }
   .navBar nav a {
-    margin: 0 1.5em; }
+    line-height: 75px;
+    width: 20%; }
   .leftZone {
     left: 0;
-    top: 22em; }
+    top: 17em; }
   .fontS {
     font-size: 2.6em; }
   .bg-tags {
@@ -546,24 +566,26 @@ a[href^="https://maps.google.com/maps"] {
     margin-top: 15px; }
   .bottom-tags {
     left: -30px;
-    bottom: -4em; }
+    bottom: 0; }
   #aboutBox {
-    left: 0.5em;
-    width: 109%; }
+    left: 0.1em;
+    width: 100%;
+    top: 7.5em; }
   #aboutBox h1:nth-child(1)::after {
     margin-top: 1.2em;
     margin-left: -4.5em; }
   .skillsBar {
-    top: 28em;
-    left: 3em; }
+    top: 26em;
+    left: 0.7em; }
   #skillsBox h1:nth-child(1)::after {
     margin-top: 1.2em;
     margin-left: -9em; }
   .skillsBar > h1 {
     display: none; }
   .projectsBox {
-    margin: 0;
-    height: 590px; }
+    margin: 0 !important;
+    min-height: 800px;
+    position: absolute; }
   .title {
     font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif; }
   .hero-body {
@@ -572,34 +594,36 @@ a[href^="https://maps.google.com/maps"] {
     margin-bottom: 1em;
     margin-right: 2em; }
   #contactBox {
-    left: 2em;
     width: 100%;
-    top: 15em; }
+    top: 10em; }
   #mapBox {
     display: none; }
   #contactBox h1:nth-child(1)::after {
     margin-top: 1.4em;
     margin-left: -6em; }
   #singlePost {
-    height: 635px !important;
     margin: 0 !important;
-    display: block; }
+    display: block;
+    width: 102%;
+    position: absolute;
+    top: 0px; }
   #skillsBox {
     width: 100%;
-    top: 8em;
-    left: 2.5em; }
+    top: 8em; }
   #skillBarMobile {
     font-size: small;
     padding: 2px; }
   .skills li span {
     top: 1px !important; }
-  #blogBox {
-    height: 520px; }
   .post-margin {
-    margin: 0; }
+    margin: 0 !important; }
   #filterCat {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -1em;
+    background-color: #e7e7e7;
+    padding-bottom: 0; }
   #filterCat > h1 {
     display: none; }
   .tag:not(body).is-large {
@@ -609,7 +633,11 @@ a[href^="https://maps.google.com/maps"] {
   .media {
     display: block; }
   .ma5 {
-    margin: 0 !important; }
+    margin: 0 !important;
+    position: absolute;
+    bottom: -9.1em;
+    background-color: #e7e7e7;
+    width: 100%; }
   .menu-list a {
     padding: 0.1em 0.75em;
     text-align: left;
@@ -617,9 +645,37 @@ a[href^="https://maps.google.com/maps"] {
   .externalLinks {
     display: none !important; } }
 
-@media (min-width: 377px) and (max-width: 600px) {
+@media (max-width: 361px) {
   body, html, .navBar {
-    width: 66.8vh; }
+    width: 360px !important; }
+  #blogBox {
+    height: 420px; }
+  #singlePost {
+    min-height: 735px !important; } }
+
+@media (max-width: 376px) {
+  body, html, .navBar {
+    width: 375px; }
+  #blogBox {
+    height: 410px; }
+  #singlePost {
+    min-height: 0px; } }
+
+@media (max-width: 320.1px) {
+  body, html, .navBar {
+    width: 320px !important; } }
+
+@media (min-width: 377px) and (max-width: 415px) {
+  body, html, .navBar {
+    width: 414px; }
+  .App {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   .image img {
     width: 80%; }
   .bg-tags, .bottom-tags {
@@ -629,8 +685,6 @@ a[href^="https://maps.google.com/maps"] {
     font-weight: bold; }
   #image, embed {
     display: none; }
-  .App {
-    min-height: 140vh; }
   .navBar {
     min-height: 0;
     height: 4em; }
@@ -657,33 +711,34 @@ a[href^="https://maps.google.com/maps"] {
   #aboutBox {
     left: 0.5em;
     width: 95%;
-    top: 8.5em; }
+    top: 10em; }
   #aboutBox::before, #aboutBox h1:nth-child(1)::after,
   #skillsBox::before, #skillsBox h1:nth-child(1)::after {
     font-size: 14px !important; }
   #skillBarMobile {
-    font-size: x-small;
+    font-size: medium;
     padding: 2px; }
   #skillsBox h1:nth-child(1)::after {
     margin-top: 1.8em;
     margin-left: -12em; }
   #skillsBox {
-    width: 90% !important;
-    top: 10em !important; }
+    width: 100%;
+    top: 8em; }
   #aboutBox h1:nth-child(1)::after,
   #contactBox h1:nth-child(1)::after {
     margin-top: 1.8em;
     margin-left: -6em; }
   .skills li span {
-    top: 1px !important; }
+    top: 6px !important; }
   .skillsBar {
     top: 28em;
-    left: 3em; }
+    left: 1em; }
   .skillsBar > h1 {
     display: none; }
   .projectsBox {
-    margin: 0;
-    height: 500px !important; }
+    margin: 0 !important;
+    position: absolute;
+    min-height: 900px; }
   .title {
     font: 200 1.5em/1.4 'Oswald', Helvetica Neue, Arial, sans-serif; }
   .hero-body {
@@ -700,31 +755,34 @@ a[href^="https://maps.google.com/maps"] {
   .mh0 {
     margin-top: 2em; }
   #blogBox {
-    height: 440px; }
+    height: 525px; }
   .content h1 {
     font-size: 1.5em; }
   .tag:not(body).is-large {
     font-size: 0.8em; }
   #singlePost {
-    height: 548px !important;
+    height: 630px !important;
     margin: 0 !important;
-    display: block; }
-  #skillsBox {
-    width: 100%;
-    top: 8em;
-    left: 2.5em; }
+    display: block;
+    width: 102%;
+    position: absolute; }
   .post-margin {
-    margin: 0; }
+    margin: 0 !important; }
   #filterCat {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -2em; }
   #filterCat > h1 {
     display: none; }
   .media {
     display: block;
     padding: 1em; }
   .ma5 {
-    margin: 0 !important; }
+    margin: 0 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   .menu-list a {
     padding: 0.1em 0.75em;
     text-align: left;
@@ -732,13 +790,26 @@ a[href^="https://maps.google.com/maps"] {
   .externalLinks {
     display: none !important; } }
 
-@media screen and (min-width: 601px) and (max-width: 800px) {
+@media screen and (min-width: 416px) and (max-width: 605px) {
+  .frame-Pos {
+    display: none; }
   .columns:not(.is-desktop) .textZone {
-    font-size: xx-small !important;
-    top: 23em; }
+    font-size: small;
+    top: 27em;
+    left: 6em; }
+  .App {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  .navBar nav {
+    top: 48%; }
   .columns:not(.is-desktop) #skillsBox {
     width: 80%;
-    top: 2em; }
+    top: 17em; }
   .columns:not(.is-desktop) #skillsBox > h1, .columns:not(.is-desktop) .skillsBar > h1 {
     font-size: 2em; }
   .columns:not(.is-desktop) #skillsBox h1:nth-child(1)::after {
@@ -747,38 +818,51 @@ a[href^="https://maps.google.com/maps"] {
   .columns:not(.is-desktop) .skills li p {
     padding: 6px; }
   .columns:not(.is-desktop) .skillsBar {
-    left: 10em;
-    top: 15em; }
+    left: 6em;
+    top: 35em; }
   .columns:not(.is-desktop) #image {
     width: 192px; }
   .columns:not(.is-desktop) .frame-Pos {
     top: 13em;
     left: 10em; }
   .columns:not(.is-desktop) #aboutBox {
-    width: 50%;
-    top: 4em; }
+    width: 85%;
+    top: 10em;
+    font-size: medium;
+    left: 5em; }
   .columns:not(.is-desktop) #aboutBox h1:nth-child(1)::after {
-    margin-top: 1.8em;
-    margin-left: -6em; }
+    margin-top: 1.8em; }
   .columns:not(.is-desktop) .f1 {
     font-size: 2em;
     font-weight: 600; }
-  .columns:not(.is-desktop) .projectsBox {
-    margin: 0 0em 0 6em;
-    height: 500px; }
+  .container {
+    margin-right: -5em; }
+  .projectsBox {
+    margin: 0 -0.1em 0 5em !important;
+    position: absolute;
+    min-height: 885px; }
   .columns:not(.is-desktop) #mapBox {
     display: none; }
   .columns:not(.is-desktop) #contactBox {
-    width: 75%; }
-  .columns:not(.is-desktop) .post-margin {
-    margin: 0 10em 0 5em; }
-  .columns:not(.is-desktop) #filterCat {
-    position: relative;
-    right: -49em;
-    top: -38em;
-    width: 20%;
-    padding: 0;
-    margin: 0; }
+    width: 85%;
+    top: 22em;
+    left: 6em; }
+  #contactBox h1:nth-child(1)::after {
+    margin-top: 2em;
+    margin-left: -7.9em; }
+  .post-margin {
+    margin: 0 0.5em 0 5em !important;
+    position: absolute;
+    min-height: 800px; }
+  #filterCat {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 4em; }
+  #filterCat > h1 {
+    display: none; }
   .columns:not(.is-desktop) #blogBox {
     height: 500px; }
   .columns:not(.is-desktop) .box .media {
@@ -792,9 +876,10 @@ a[href^="https://maps.google.com/maps"] {
   .columns:not(.is-desktop) .tag:not(body).is-large {
     font-size: 0.82em; }
   .columns:not(.is-desktop) #singlePost {
-    height: 630px !important;
     margin: 0 0 0 5em !important;
-    width: 65%; }
+    width: 100%;
+    position: absolute;
+    min-height: 840px; }
   .columns:not(.is-desktop) #singlePost .media-content {
     display: block;
     position: relative;
@@ -806,7 +891,11 @@ a[href^="https://maps.google.com/maps"] {
   .columns:not(.is-desktop) .content > h1 {
     font-size: 1.5em; }
   .columns:not(.is-desktop) .ma5 {
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    left: 3em; }
   .columns:not(.is-desktop) .is-size-3 {
     font-size: 14px; }
   .columns:not(.is-desktop) .material-icons {
@@ -814,73 +903,137 @@ a[href^="https://maps.google.com/maps"] {
   .columns:not(.is-desktop) .externalLinks {
     font-size: 10px !important; } }
 
-@media screen and (min-width: 801px) and (max-width: 1025px) {
+@media screen and (min-width: 606px) and (max-width: 800px) {
+  .textZone {
+    font-size: large;
+    left: 5em;
+    top: 20em; }
   #aboutBox {
-    font-size: 13px;
-    top: 8em !important; }
-  #image {
-    width: 257px; }
+    font-size: medium;
+    top: 13em !important;
+    width: 85%;
+    left: 6em; }
+  .App {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   #contactBox {
-    top: 12em !important; }
+    top: 23em !important;
+    width: 89%;
+    left: 5em; }
   .frame-Pos {
-    top: 17em;
-    left: 8em; }
+    display: none; }
   .skillsBar {
-    top: 19em; }
-  .projectsBox {
-    margin: 0 2em 0 7em; }
-  .infoMap {
-    right: 16em; }
-  .leftZone {
-    top: 20em !important;
+    top: 35em;
     left: 7em; }
+  .projectsBox {
+    margin: 0 0.1em 0 5em !important;
+    position: absolute;
+    min-height: 900px; }
+  #mapBox {
+    display: none; }
+  #skillsBox {
+    font-size: medium !important;
+    top: 11em !important;
+    width: 85%;
+    left: 5em; }
   .post-margin {
-    margin: 0 13em 0 5em; }
+    margin: 0 0.1em 0 5em !important;
+    position: absolute;
+    min-height: 805px; }
   #blogBox {
     height: 710px; }
-  #filterCat {
-    position: relative;
-    right: -64em;
-    top: -53em;
-    width: 20%;
-    padding: 0;
-    margin: 0; }
   #filterCat > h1 {
-    word-break: unset;
-    font-size: 1.5em;
-    display: inline-block;
-    vertical-align: middle; }
+    display: none; }
+  #filterCat {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 4em; }
   #singlePost {
-    height: 850px !important;
-    margin: 0px 1em 0px 6em !important; }
+    min-height: 900px;
+    margin: 0px 1em 0px 4em !important;
+    width: 95%;
+    position: absolute; }
   .ma5 {
-    margin: 0.5em 0 !important; }
+    margin: 0.5em 0 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   .is-size-3 {
     font-size: 14px !important; }
   .externalLinks {
     font-size: 10px !important; } }
 
-@media screen and (min-width: 1026px) and (max-width: 1532px) {
-  .leftZone {
-    top: 29em; }
+@media screen and (min-width: 801px) and (max-width: 1025px) {
+  .App {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  #contactBox {
+    top: 35em !important;
+    width: 89%;
+    left: 6em; }
+  .frame-Pos {
+    display: none; }
+  .textZone {
+    font-size: medium !important;
+    left: 5em;
+    top: 30em !important; }
   #image {
     width: 365px; }
   #aboutBox {
-    top: 25em; }
+    top: 24em !important;
+    font-size: large;
+    width: 90%;
+    left: 5em; }
   .frame-Pos {
     top: 17em; }
   .skillsBar {
-    top: 27em; }
+    top: 38em; }
   .projectsBox {
-    height: 700px; }
-  #mapBox div:nth-child(2) {
-    height: 1060px !important; }
+    margin: 0 0.1em 0 5em !important;
+    position: absolute;
+    min-height: 1200px; }
+  #mapBox {
+    display: none; }
   .infoMap {
     top: 27em; }
-  #contactBox {
-    top: 20em; }
   #blogBox, #singlePost {
     height: 920px; }
+  #singlePost {
+    min-height: 900px;
+    margin: 0px 1em 0px 5em !important;
+    width: 95%;
+    position: absolute; }
+  .post-margin {
+    margin: 0 0.1em 0 6em !important;
+    position: absolute;
+    min-height: 1160px; }
+  #filterCat {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 4em; }
+  #filterCat > h1 {
+    display: none; }
+  .ma5 {
+    margin: 0.5em 0 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   .externalLinks {
     font-size: 10px !important; } }
 

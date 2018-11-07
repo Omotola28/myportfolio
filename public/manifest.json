@@ -1,0 +1,15 @@
+{
+    "name": "My portfolio",
+    "short_name": "React app",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "./index.html"
+}

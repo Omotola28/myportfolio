@@ -4,7 +4,7 @@ import open from 'open';
 
 /* eslint-disable no-console */
 
-const port = 3000;
+const port = 80;
 const app = express();
 
 app.use(express.static('dist'));
@@ -17,6 +17,7 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`);
+    open(`167.99.89.227:${port}`);
+    console.log("Running......");
   }
 });

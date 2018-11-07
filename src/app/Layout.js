@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
             title="Omotola Shogunle portfolio"
             meta={[
               { charset: 'utf-8' },
-              { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+              { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no' },
               { name: 'theme-color', content: 'yellow, gray and black' },
               { name: 'Omotola Shogunle', content: 'Omotola Shogunle\'s personal wedsite, portfolio, blog, tutorials on all things programming languages,concepts'},
               { name: 'languages', content: 'html, css, python, JavaScript, react' },
@@ -41,3 +41,15 @@ Layout.propTypes = {
 }
 
 export default Layout;
+
+
+
+
+
+
+
+
+
+
+
+
