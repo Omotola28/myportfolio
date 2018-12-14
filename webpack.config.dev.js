@@ -1,12 +1,14 @@
 import webpack from 'webpack';
 import path from 'path';
 
+ entry: ["babel-polyfill", "./app/js"]
 export default {
   devtool: 'inline-source-map',
   noInfo: false,
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack-hot-middleware/client?reload=false', //note that it reloads the page if hot module reloading fails.
+    //'webpack-hot-middleware/client?reload=false', //note that it reloads the page if hot module reloading fails.
+    'babel-polyfill',
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',

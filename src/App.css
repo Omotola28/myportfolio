@@ -285,7 +285,7 @@ small a {
 #contactBox {
   top: 8em; }
 
-#contactBox a {
+#contactBox button {
   float: right; }
 
 #contactBox::before, #contactBox h1:nth-child(1)::after {
@@ -326,7 +326,7 @@ form input[type="text"], form input[type="email"] {
   padding: 0 20px;
   box-sizing: border-box; }
 
-form textarea {
+.textarea {
   width: 100%;
   border: 0;
   background: #37393b;
@@ -339,6 +339,24 @@ form textarea {
 
 .fixposition {
   margin-left: 1%; }
+
+.emailMsg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification  {
+    background-color: #f4c900;
+    color: #000;
+    width: 50%;
+    top:10.5em;
+    left: 10em;
+}
+
+.is-whitesmoke {
+  background-color: #e7e7e7;
+}
 
 /*Location*/
 #mapBox {
