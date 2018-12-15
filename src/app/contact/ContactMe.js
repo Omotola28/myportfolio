@@ -17,7 +17,7 @@ class ContactMe extends React.Component {
         case 200:
           return <Notification text={'Message was sent successfully :)'} style={'is-warning'} />;
         case 400:
-          return <Notification text={'Message message errored'} style={'is-danger'}/>;
+          return <Notification text={'Sending message errored!'} style={'is-danger'}/>;
         case '':
           return <Notification text={''} style={'is-whitesmoke'}/>;
         default:

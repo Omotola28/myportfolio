@@ -21,9 +21,11 @@ class ContactPage extends React.Component {
 	                             	  {
 	                             	  	this.props.dispatch(actions.emailSent(response.status));
 	                             	  	this.props.dispatch(reset('contactMe'));  // requires form name
+	                             	  	console.log(response);
 	                             	  }
 	                             	  else if (response.data.statusCode)
 	                             	   	this.props.dispatch(actions.emailErrored(response.data.statusCode));
+	                             	    console.log(response);
                                    })
                                  .catch(error => {
                                       console.log(error.response)

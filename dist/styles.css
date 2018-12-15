@@ -10673,7 +10673,7 @@ form input[type="text"], form input[type="email"] {
   justify-content: center;
 }
 
-.notification.is-primary {
+.notification  {
     background-color: #f4c900;
     color: #000;
     width: 50%;

@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import dotenv from 'dotenv';
 
  entry: ["babel-polyfill", "./app/js"]
 export default {

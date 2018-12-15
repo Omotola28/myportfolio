@@ -7,11 +7,14 @@ import Mailgun from 'mailgun-js';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
 import nodemailerTransport from 'nodemailer-mailgun-transport';
+import ENV from 'dotenv';
+
+ENV.config();
 
 const auth ={
   auth: {
-    api_key: 'bc4b140085c245fcde786cfe81a097bc-4412457b-648bf3d6',
-    domain: 'sandbox773c0b63d36548ce980f5c000059eaf7.mailgun.org'
+    api_key: process.env.REACT_APP_MAILGUN_API_KEY,
+    domain: process.env.REACT_APP_MAILGUN_DOMAIN
   }
 }
 
@@ -44,7 +47,7 @@ app.post('/inbox', (req,res) => {
 
   nodemailerMailgun.sendMail({
   from: req.body.email,
-  to: 'omotolashogunle@gmail.com',
+  to: process.env.REACT_APP_DOMAIN_EMAIL,
   subject: req.body.subject,
 
   html: `<p>${req.body.message}</p>`,

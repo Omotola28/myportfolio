@@ -33,6 +33,7 @@
     "contentful": "^6.1.2",
     "cors": "^2.8.5",
     "css-loader": "1.0.0",
+    "dotenv": "^6.2.0",
     "express-handlebars": "^3.0.0",
     "extract-text-webpack-plugin": "1.0.1",
     "google-maps-react": "^2.0.2",
