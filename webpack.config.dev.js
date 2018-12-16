@@ -2,7 +2,16 @@ import webpack from 'webpack';
 import path from 'path';
 import dotenv from 'dotenv';
 
- entry: ["babel-polyfill", "./app/js"]
+// call dotenv and it will return an Object with a parsed key 
+const env = dotenv.config().parsed;
+
+// reduce it to a nice object, the same as before
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
+
+// entry: ["babel-polyfill", "./app/js"]
 export default {
   devtool: 'inline-source-map',
   noInfo: false,
@@ -22,6 +31,7 @@ export default {
     contentBase: path.resolve(__dirname, 'src')
   },
   plugins: [
+    new webpack.DefinePlugin(envKeys),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
