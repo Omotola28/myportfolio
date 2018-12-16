@@ -349,9 +349,7 @@ form input[type="text"], form input[type="email"] {
 .notification  {
     background-color: #f4c900;
     color: #000;
-    width: 50%;
-    top:10.5em;
-    left: 10em;
+    width: 100%;
 }
 
 .is-whitesmoke {
@@ -503,6 +501,10 @@ a[href^="https://maps.google.com/maps"] {
     width: 125%;
     top: 15em;
     left: 1em; }
+  .notification{
+    top: 1em;
+    font-weight: 700;
+  }
   .tags:last-child {
     margin-bottom: 1em;
     margin-right: 2em; }
@@ -593,6 +595,10 @@ a[href^="https://maps.google.com/maps"] {
     left: 2em;
     width: 100%;
     top: 15em; }
+  .notification{
+    top: 1em;
+    font-weight: 700;
+  }
   #mapBox {
     display: none; }
   #contactBox h1:nth-child(1)::after {
@@ -633,7 +639,8 @@ a[href^="https://maps.google.com/maps"] {
     text-align: left;
     font-size: 1em !important; }
   .externalLinks {
-    display: none !important; } }
+    display: none !important; } 
+  }
 
 @media (min-width: 377px) and (max-width: 600px) {
   body, html, .navBar {
@@ -692,6 +699,10 @@ a[href^="https://maps.google.com/maps"] {
   #contactBox h1:nth-child(1)::after {
     margin-top: 1.8em;
     margin-left: -6em; }
+  .notification{
+    top: 1em;
+    font-weight: 700;
+  }
   .skills li span {
     top: 1px !important; }
   .skillsBar {

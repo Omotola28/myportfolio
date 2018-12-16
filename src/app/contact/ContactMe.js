@@ -31,11 +31,11 @@ class ContactMe extends React.Component {
 
       return(
              <div className="column is-half">
-              {this.emailNotification(message)}
               <div className='tl pa3 w-40 leftZone' id='contactBox'>
                     <h1 className='f1'>{'Contact Me'}</h1>
                     <main className="black-80">
                     <form autoComplete="off" onSubmit={handleSubmit} ref="contactForm" >
+                      {this.emailNotification(message)}
                       <fieldset className="ba b--transparent ph0 mh0">
                          <div className="box-left">
                           <Field className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" label="Full Name" name="name" id="name" component={renderField} type="text"/>
@@ -46,14 +46,14 @@ class ContactMe extends React.Component {
                          </div>
                         <div className="cf">
                           <label className="clip" htmlFor="subject">Subject</label>
-                           <Field className="fixposition pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="subject" label="Subject" component={renderField} type="text" id="subject" placeholder="Subject"/>
+                           <Field className="fixposition pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="subject" label="subject" component={renderField} type="text" id="subject" placeholder="Subject"/>
                          </div>
                          <div className="cf">
                           <label className="clip" htmlFor="subject">Message</label>
                           <Field className="fixposition input-reset ba hover-bg-black hover-white textarea" name="message" type="text" id="message" component="textarea" placeholder="Message"/>
                          </div>
                       </fieldset>
-                      <button type="submit" className="pseudoBtn fixposition" label="Reset">SEND</button>
+                      <button type="submit" className="pseudoBtn fixposition" label="send">SEND</button>
                     </form>
                       </main>
                 </div> 
