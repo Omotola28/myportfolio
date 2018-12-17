@@ -421,8 +421,9 @@ a[href^="https://maps.google.com/maps"] {
 
 /*Projects page*/
 .projectsBox {
-  margin: 0 9em;
-  max-width: none; }
+  margin: 0 0.1em 0 5em !important;
+  max-width: none !important;
+ }
 
 /****************************************************/
 /*                  MEDIA QUERIES                   */

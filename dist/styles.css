@@ -10740,7 +10740,7 @@ a[href^="https://maps.google.com/maps"] {
   background-color: #f4c900; }
 
 .post-margin {
-  margin: 0 0.5em 0 16em; }
+  margin: 0 0.5em 0 16em !important; }
 
 /*Single Blog post */
 .externalLinks {
@@ -10748,8 +10748,9 @@ a[href^="https://maps.google.com/maps"] {
 
 /*Projects page*/
 .projectsBox {
-  margin: 0 9em;
-  max-width: none; }
+  margin: 0 0.1em 0 5em !important;
+  max-width: none !important;
+}
 
 /****************************************************/
 /*                  MEDIA QUERIES                   */
