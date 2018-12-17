@@ -4,5 +4,12 @@ export default {
   	limit: 5,
     posts: [],
     filter: ''
+  },
+  contact: {
+  	statusCode: 0
   }
 }
+
+/*loading: false,
+message: '',
+errMessage: ''*/

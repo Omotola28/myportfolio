@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogNav from './shared/BlogNav'
-import BlogContent from './shared/BlogContent'
+import BlogContent  from './shared/BlogContent'
 
 const BlogItem = (props) => {
 	return (
