@@ -1,5 +1,16 @@
 import webpack from 'webpack';
 import path from 'path';
+import dotenv from 'dotenv';
+
+
+// call dotenv and it will return an Object with a parsed key 
+const env = dotenv.config().parsed;
+
+// reduce it to a nice object, the same as before
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
 
 export default {
   devtool: 'inline-source-map',
@@ -20,6 +31,7 @@ export default {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin(envKeys),
     new webpack.NoErrorsPlugin()
   ],
   module: {

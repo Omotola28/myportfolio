@@ -4,8 +4,8 @@ import * as actions from './blog/actions'
 
 
 const client = contentful.createClient({
-  space: 'c3g21axvbohw',
-  accessToken: '311345dabb923032220faba79a42168a05143c20dd46e59477eee729fd2ddd6d' 
+  space: process.env.REACT_APP_CONTENTFUL_SPACE,
+  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESSTOKEN
 })
 
 
