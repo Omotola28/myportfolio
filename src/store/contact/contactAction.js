@@ -13,18 +13,3 @@ export function emailResetState() {
   return { type: types.SEND_MAIL_RESET}
 }
 
-
-
-/*const AUTH_ENDPOINT_BASE = '/api/v1/communicate';
-const SEND_MAIL = 'SEND_MAIL';
-
-export const sendMail = (message) => async (dispatch) => {
-  try {
-    const response = await post(dispatch, SEND_MAIL, `${AUTH_ENDPOINT_BASE}/mail`, message, false);
-    alert(response);
-
-  } catch (err) {
-  	alert(err);
-    await handleError(dispatch, err, SEND_MAIL);
-  }
-};*/
