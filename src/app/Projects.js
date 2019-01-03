@@ -3,8 +3,14 @@ import PageHeader from './../components/PageHeader';
 import PageContent from './../components/PageContent';
 import GameImage from './../components/resources/videogame.gif';
 import Website from './../components/resources/website.gif';
+import ButtonCount from './ButtonCount';
+import {loadState} from '../store/LocalStorage';
+import { connect } from 'react-redux';
 
 class Projects extends React.Component {
+  constructor() {
+    super();
+  }
 
   render() {
     return (
@@ -30,13 +36,13 @@ class Projects extends React.Component {
                                      <span>GitHub</span>
                                    </a>
                                 </p>
-                                <p className="card-footer-item">
-                                  <span>
-                                    <i className="material-icons">
-                                    thumb_up
-                                    </i>
-                                  </span>
-                                </p>
+
+                                <div className="card-footer-item">
+                                  <div className="clapEffect">
+                                      <span>{this.props.buttonData.photosynthesis.counter}</span>
+                                      <ButtonCount id={'box1'}/>
+                                  </div>
+                                </div>
                               </footer>
                      </article>
                      <div className="tile is-child box">
@@ -49,7 +55,7 @@ class Projects extends React.Component {
                              <p className="subtitle has-text-justified">This website was built using HTML&CSS , Javascript and PHP. It is an advertisement website,
                              where users can register and upload their products for other users to purchase. Second year client server course work</p>
                              <figure className="image">
-                               <img alt="Websie=te gif" src={Website}/>
+                               <img alt="Website gif" src={Website}/>
                              </figure>
                              <footer className="card-footer">
                                 <p className="card-footer-item">
@@ -60,13 +66,12 @@ class Projects extends React.Component {
                                      <span>GitHub</span>
                                    </a>
                                 </p>
-                                <p className="card-footer-item">
-                                  <span>
-                                    <i className="material-icons">
-                                    thumb_up
-                                    </i>
-                                  </span>
-                                </p>
+                                <div className="card-footer-item">
+                                  <div className="clapEffect">
+                                      <span>{this.props.buttonData.ad.counter}</span>
+                                      <ButtonCount id={'box2'}/>
+                                  </div>
+                                </div>
                               </footer>
                      </article>
                   </div>
@@ -76,4 +81,19 @@ class Projects extends React.Component {
     )
   }
 }
-export default Projects
+function mapStateToProps(state, ownProps) {
+  return {
+    buttonData: {
+      photosynthesis:{
+          counter: state.buttonData.photosynthesis.counter,
+          data: state.buttonData.photosynthesis.data
+        },
+      ad:{
+          counter: state.buttonData.ad.counter,
+          data: state.buttonData.ad.data
+        }
+    }
+    
+  }
+}
+export default connect(mapStateToProps)(Projects)

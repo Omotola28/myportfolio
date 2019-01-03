@@ -20,28 +20,28 @@ class Filter extends React.Component {
 						</a>
 					</div>
 					<div className="tags has-addons level-item">
-					  <a onClick={() => this.props.handleFilter('Life')}>
-						  <span className="tag is-large">Category</span>
-						  <span className="tag is-warning is-large">Life</span>
-					  </a>
-					</div>
-					<div className="tags has-addons level-item">
-						<a onClick={() => this.props.handleFilter('Rants')}>
-							<span className="tag is-large">Category</span>
-							<span className="tag is-danger is-large">Rants</span>
-						</a>
-					</div>
-					<div className="tags has-addons level-item">
 					  <a onClick={() => this.props.handleFilter('Learn')}>
-					  	<span className="tag is-large">Category</span>
-					  	<span className="tag is-success is-large">Learn</span>
+						  <span className="tag is-large">Category</span>
+						  <span className="tag is-warning is-large">Learn</span>
 					  </a>
 					</div>
 					<div className="tags has-addons level-item">
-						<a onClick={() => this.props.handleFilter('Relationships')}>
+						<a onClick={() => this.props.handleFilter('How-To')}>
 							<span className="tag is-large">Category</span>
-							<span className="tag is-link is-large">Relationships</span>
+							<span className="tag is-link is-large">How-To</span>
 						</a>
+					</div>
+					<div className="tags has-addons level-item">
+						<a onClick={() => this.props.handleFilter('Growth')}>
+							<span className="tag is-large">Category</span>
+							<span className="tag is-danger is-large">Growth</span>
+						</a>
+					</div>
+					<div className="tags has-addons level-item">
+					  <a onClick={() => this.props.handleFilter('Community')}>
+					  	<span className="tag is-large">Category</span>
+					  	<span className="tag is-success is-large">Community</span>
+					  </a>
 					</div>
 				</div>
 		  	)

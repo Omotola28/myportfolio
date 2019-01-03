@@ -7,6 +7,16 @@ export default {
   },
   contact: {
   	statusCode: 0
+  },
+  buttonData:{
+    photosynthesis:{
+      counter: 0,
+      data: {}
+    },
+    ad:{
+      counter: 0,
+      data: {}
+    }
   }
 }
 
