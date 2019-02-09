@@ -1,13 +1,13 @@
 import * as contentful from 'contentful'
 import * as actions from './blog/actions'
+import { client } from './contentfulClientApi'
 
 
-
-const client = contentful.createClient({
-  space: process.env.REACT_APP_CONTENTFUL_SPACE,
-  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESSTOKEN
-})
-
+//const client = contentful.createClient({
+//  space: process.env.REACT_APP_CONTENTFUL_SPACE,
+//  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESSTOKEN
+//})
+//
 
 export function loadBlog() {
   //const error = err => console.log(err)
