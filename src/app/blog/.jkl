@@ -33,21 +33,17 @@ const getURL = () => {
  return obj;
 }
 
-
 class SingleBlogPost extends React.Component {
- 
   render(){
-    let data;
-    data = this.props.location.state;
-    const { props } = data;
-    let obj = {};
-    Object.assign(obj, getURL());
-    return (
+      let data;
+       let obj = {};
+      this.props.location.state === undefined ? Object.assign(obj, getURL()) : data = this.props.location.state;
+      const { props } = data;
+    return(
       <div>
-      { (() => {
-      if( data === undefined )
-      {
-        return (
+
+        { props === undefined 
+          ?
           <div className="columns is-mobile">
           <PageContent style={{height: '680px', margin: '0 1em 0 14em'}} className="scrollBar column is-three-fifths" id="singlePost">
           <BlogNav to="/blog" date={obj.publishDate}/>
@@ -55,11 +51,8 @@ class SingleBlogPost extends React.Component {
           </PageContent> 
           <RelatedLinks links={obj.related} />
           </div>
-        );
-      }
-      else 
-      {
-        return (
+
+          : 
           <div className="columns is-mobile">
           <PageContent style={{height: '680px', margin: '0 1em 0 14em'}} className="scrollBar column is-three-fifths" id="singlePost">
           <BlogNav to="/blog" date={props.publishDate}/>
@@ -67,11 +60,9 @@ class SingleBlogPost extends React.Component {
           </PageContent> 
           <RelatedLinks links={props.related} />
           </div>
-        );
-      }
-      })()}  
+        }
       </div>
-    );
+    )
   }
 }
 export default SingleBlogPost
