@@ -24,7 +24,12 @@ export default function blogReducer(state = initialState.blog, action) {
         ...state,
         filter: action.filter
       }
-   default:
+    case types.LOAD_RELATED_LINK_DATA:
+      return{
+        ...state,
+        data: action.values
+      }
+    default:
      return state
   }
 }

@@ -7,26 +7,24 @@ import 'tachyons';
 import registerServiceWorker from './registerServiceWorker';
 import createHistory from "history/createBrowserHistory";
 import initialState from './store/initialState'
+import '../public/favicon.ico'
 
 // Redux Store
 import { Provider } from 'react-redux';
 import { configureStore } from './store/configureStore';
-import { loadBlog } from './store/Blog';
+import { loadBlog, relatedLinks } from './store/Blog';
 
 const history = createHistory();
 
 const store = configureStore(history, initialState);
 store.dispatch(loadBlog())
-
-// Create an enhanced history that syncs navigation events with the store
-//const connectHistoryAndStore = syncHistoryWithStore(createHistory(), store) 
-
+store.dispatch(relatedLinks())
 
 ReactDOM.render((
-	<Provider store={store}>
-		<Router history={history}>
-		    <App />
-		</Router>
-	</Provider>
-  ), document.getElementById('root'))
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>
+), document.getElementById('root'))
 registerServiceWorker()

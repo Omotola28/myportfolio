@@ -13,38 +13,38 @@ class Filter extends React.Component {
 					<h1 className="title has-text-right level-item">
 					   Filter Post
 					</h1>	
-					<div className="tags has-addons level-item">
-						<a onClick={() => this.props.handleFilter('')}>
-							<span className="tag is-large">Category</span>
-							<span className="tag is-dark is-large">All</span>
-						</a>
-					</div>
-					<div className="tags has-addons level-item">
-					  <a onClick={() => this.props.handleFilter('Life')}>
-						  <span className="tag is-large">Category</span>
-						  <span className="tag is-warning is-large">Life</span>
-					  </a>
-					</div>
-					<div className="tags has-addons level-item">
-						<a onClick={() => this.props.handleFilter('Rants')}>
-							<span className="tag is-large">Category</span>
-							<span className="tag is-danger is-large">Rants</span>
-						</a>
-					</div>
-					<div className="tags has-addons level-item">
-					  <a onClick={() => this.props.handleFilter('Learn')}>
-					  	<span className="tag is-large">Category</span>
-					  	<span className="tag is-success is-large">Learn</span>
-					  </a>
-					</div>
-					<div className="tags has-addons level-item">
-						<a onClick={() => this.props.handleFilter('Relationships')}>
-							<span className="tag is-large">Category</span>
-							<span className="tag is-link is-large">Relationships</span>
-						</a>
-					</div>
-				</div>
-		  	)
+          <div className="tags has-addons level-item">
+            <a onClick={() => this.props.handleFilter('')}>
+              <span className="tag is-large">Category</span>
+              <span className="tag is-dark is-large">All</span>
+            </a>
+          </div>
+          <div className="tags has-addons level-item">
+            <a onClick={() => this.props.handleFilter('Learn')}>
+              <span className="tag is-large">Category</span>
+              <span className="tag is-warning is-large">Learn</span>
+            </a>
+          </div>
+          <div className="tags has-addons level-item">
+            <a onClick={() => this.props.handleFilter('How-To')}>
+              <span className="tag is-large">Category</span>
+              <span className="tag is-link is-large">How-To</span>
+            </a>
+          </div>
+          <div className="tags has-addons level-item">
+            <a onClick={() => this.props.handleFilter('Growth')}>
+              <span className="tag is-large">Category</span>
+              <span className="tag is-danger is-large">Growth</span>
+            </a>
+          </div>
+          <div className="tags has-addons level-item">
+            <a onClick={() => this.props.handleFilter('Community')}>
+              <span className="tag is-large">Category</span>
+              <span className="tag is-success is-large">Community</span>
+            </a>
+          </div>
+        </div>
+    	)
 	}
 	
  

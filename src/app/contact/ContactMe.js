@@ -50,7 +50,7 @@ class ContactMe extends React.Component{
                     </div>
                     <div className="cf">
                       <label className="clip" htmlFor="subject">Subject</label>
-                      <Field className="fixposition pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="subject" label="subject" component={renderField} type="text" id="subject" placeholder="Subject"/>
+                      <Field className="fixposition pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" name="subject" label="Subject" component={renderField} type="text" id="subject" placeholder="Subject"/>
                     </div>
                     <div className="cf">
                       <label className="clip" htmlFor="subject">Message</label>

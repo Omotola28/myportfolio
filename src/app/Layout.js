@@ -8,7 +8,7 @@ import Router from './layout/Router';
 import Content from './layout/Content';
 
 const Layout = ({ children }) => (
-	<Site>
+	<Site id="landscapeView">
 		<Helmet
             title="Omotola Shogunle portfolio"
             meta={[

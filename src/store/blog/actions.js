@@ -22,4 +22,6 @@ export function handleFilter(filter) {
 	return { type: types.FILTER, filter}
 }
 
-
+export function loadRelatedLink(values) {
+	return { type: types.LOAD_RELATED_LINK_DATA, values}
+}

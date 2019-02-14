@@ -12,7 +12,7 @@ const Introduction = () => {
 			 	<h1 className='fontS'>{`I'm Omotola,`}</h1>
 			 	<h1 className='fontS'>{'Software Engineer.'}</h1>
 			 	<h2 className='f5'>{'PHP/JAVASCRIPT/JAVA/HTML&CSS'}</h2>
-			 	<a rel="contact" href="https://jacekjeznach.com/contact" className="pseudoBtn">{'CONTACT ME'}</a>
+			 	<a rel="contact" href="https://oshogunle.com/inbox" className="pseudoBtn">{'CONTACT ME'}</a>
 		       </div>
 		   </div>
 		 	

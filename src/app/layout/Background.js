@@ -2,7 +2,7 @@ import React from 'react';
 
 const Background = () => {
 	return(
-		   <div className= 'background'>
+		   <div className= 'background rotate'>
 		   	 <span className="bg-tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
 
 		   	  <span className="bottom-tags">
