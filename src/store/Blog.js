@@ -1,19 +1,26 @@
 import * as contentful from 'contentful'
 import * as actions from './blog/actions'
+import { client } from './contentfulClientApi'
 
 
+const splitUrl = (string) => {
+  let str = string.split('=')[1];
+  return str;
+}
 
+const getEntry = (id) => {
+ return client.getEntry( id )
+    .then(function (entry){
+       return entry; 
+    })
+    .catch( error =>  {
+      console.log(error);
+    })
 
-const client = contentful.createClient({
-  space: process.env.REACT_APP_CONTENTFUL_SPACE,
-  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESSTOKEN
-})
-
+}
 
 export function loadBlog() {
-  //const error = err => console.log(err)
-
-
+  
   return dispatch => {
   	dispatch(actions.blogLoading())
   	return client.getEntries({content_type: 'post', order: 'sys.createdAt'})
@@ -27,4 +34,18 @@ export function loadBlog() {
     }
 }
 
-//'fields.category': handleFilter
+export function relatedLinks(){
+  let url = window.location.search;
+  let entry = splitUrl(url);
+  let data = getEntry(entry);
+  let obj;
+  return dispatch => {
+    dispatch(actions.blogLoading())
+    data.then(function(values){
+      dispatch(actions.loadRelatedLink(values))
+    })
+    .catch(error =>{
+      console.log(error);
+    })
+  }
+}
