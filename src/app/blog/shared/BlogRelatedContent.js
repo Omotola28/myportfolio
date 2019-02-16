@@ -12,7 +12,7 @@ class BlogRelatedContent extends React.Component {
   render(){
     return (
       <div>
-        { this.props.data.length == 0
+        { this.props.data == undefined
           ? <Loader className="has-text-primary"/>
           :  <article className="media">
               <div className="media-left">
@@ -39,6 +39,7 @@ class BlogRelatedContent extends React.Component {
 }
 function mapToStateProps(state, OwnProps)
 {
+  console.log(state);
   return {
     data: state.blog.data
    }

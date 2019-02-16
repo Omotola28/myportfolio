@@ -18,10 +18,10 @@ class SingleBlogPost extends React.Component {
         return (
           <div className="columns is-mobile">
           <PageContent style={{height: '680px', margin: '0 1em 0 14em'}} className="scrollBar column is-three-fifths" id="singlePost">
-		      <BlogNav to="/blog" date={this.props.data.publishDate}/>
+		      <BlogNav to="/blog" date={this.props.data.fields.publishDate}/>
 		      <BlogRelatedContent />
           </PageContent>
-          <RelatedLinks links={this.props.data.related} />
+          <RelatedLinks links={this.props.data.fields.related} />
           </div>
         );
       }
@@ -42,7 +42,7 @@ class SingleBlogPost extends React.Component {
 }
 function mapToStateProps(state, OwnProps)
 {
-	return {
+  return {
 	  data: state.blog.data
 	 }
 }
