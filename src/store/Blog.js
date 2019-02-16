@@ -43,7 +43,7 @@ export function relatedLinks(){
   return dispatch => {
     dispatch(actions.blogLoading())
     data.then(function(values){
-      dispatch(actions.loadRelatedLink(values))
+        setTimeout(() => dispatch(actions.loadRelatedLink(values)), 1000)
     })
     .catch(error =>{
       console.log(error);
