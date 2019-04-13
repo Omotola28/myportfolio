@@ -19,12 +19,10 @@ const getEntry = (id) => {
 }
 
 export function loadBlog() {
-  //const error = err => console.log(err)
-
 
   return dispatch => {
   	dispatch(actions.blogLoading())
-  	return client.getEntries({content_type: 'post', order: 'sys.createdAt'})
+  	return client.getEntries({content_type: 'post', order: 'fields.publishDate'})
         .then(({items}) => {
       	setTimeout(() => dispatch(actions.loadBlogSuccess(items)), 1000)
       })
