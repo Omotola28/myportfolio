@@ -340,23 +340,19 @@ form .textarea {
 .fixposition {
   margin-left: 1%; }
 
- 
-.emailMsg{
+.emailMsg {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.notification  {
-    background-color: #f4c900;
-    color: #000;
-    width: 100%;
-}
+.notification {
+  background-color: #f4c900;
+  color: #000;
+  width: 100%; }
 
 .is-whitesmoke {
-  background-color: #e7e7e7;
-}
- 
+  background-color: #e7e7e7; }
+
 /*Location*/
 #mapBox {
   background: rgba(253, 234, 8, 0.1); }
@@ -432,7 +428,6 @@ a[href^="https://maps.google.com/maps"] {
 .post-margin {
   margin: 0 0.5em 0 16em !important; }
 
-
 /*Single Blog post */
 .externalLinks {
   font-size: 12px !important; }
@@ -440,17 +435,15 @@ a[href^="https://maps.google.com/maps"] {
 /*Projects page*/
 .projectsBox {
   margin: 0 9em !important;
-  max-width: none !important;
- }
-.clickButton{
-  margin: 0 1em;
-}
+  max-width: none !important; }
 
-.clapEffect{
+.clickButton {
+  margin: 0 1em; }
+
+.clapEffect {
   display: flex;
   flex-flow: row-reverse;
-  align-items: center;
-}
+  align-items: center; }
 
 /****************************************************/
 /*                  MEDIA QUERIES                   */
@@ -537,10 +530,9 @@ a[href^="https://maps.google.com/maps"] {
   #contactBox {
     width: 100%;
     top: 7em; }
-  .notification{
+  .notification {
     top: 1em;
-    font-weight: 700;
-  }
+    font-weight: 700; }
   .post-margin {
     margin: 0 !important;
     position: absolute;
@@ -628,10 +620,9 @@ a[href^="https://maps.google.com/maps"] {
   #contactBox {
     width: 100%;
     top: 10em; }
-  .notification{
+  .notification {
     top: 1em;
-    font-weight: 700;
-  }
+    font-weight: 700; }
   #mapBox {
     display: none; }
   #contactBox h1:nth-child(1)::after {
@@ -687,8 +678,7 @@ a[href^="https://maps.google.com/maps"] {
   #blogBox {
     height: 440px; }
   #aboutBox {
-    top: 7.5em;
-  }
+    top: 7.5em; }
   #singlePost {
     min-height: 735px; } }
 
@@ -696,42 +686,33 @@ a[href^="https://maps.google.com/maps"] {
   body, html, .navBar {
     width: 360px; }
   #blogBox {
-    height: 520px; }
-  .leftZone{
-    top: 21em;
-  }
-  #aboutBox{
-    top: 10.5em 
-  }
-  .skilllsBar{
-    top: 30em;
-  }
+    height: 470px; }
+  .leftZone {
+    top: 21em; }
+  #aboutBox {
+    top: 10.5em; }
+  .skilllsBar {
+    top: 30em; }
   #contactBox {
-    top: 13em;
-  }
+    top: 13em; }
   #singlePost {
     min-height: 735px; } }
 
-@media screen and (device-width: 375px) and (device-height: 812px ){
+@media screen and (device-width: 375px) and (device-height: 812px) {
   body, html, .navBar {
     width: 375px; }
   #blogBox {
     height: 600px; }
   #contactBox {
-    top: 15em;
-  }
+    top: 15em; }
   #skillsBox {
-    top: 11em;
-  }
-  #skillsBar{
-    top: 32em;
-  }
-  #aboutBox{
-    top: 14em;
-  }
-  .leftZone{
-    top: 24em;
-  }
+    top: 11em; }
+  #skillsBar {
+    top: 32em; }
+  #aboutBox {
+    top: 14em; }
+  .leftZone {
+    top: 24em; }
   #singlePost {
     min-height: 830px; } }
 
@@ -802,10 +783,9 @@ a[href^="https://maps.google.com/maps"] {
   #contactBox h1:nth-child(1)::after {
     margin-top: 1.8em;
     margin-left: -6em; }
-  .notification{
-      top: 1em;
-      font-weight: 700;
-    }
+  .notification {
+    top: 1em;
+    font-weight: 700; }
   .skills li span {
     top: 6px !important; }
   .skillsBar {
@@ -868,8 +848,6 @@ a[href^="https://maps.google.com/maps"] {
   .externalLinks {
     display: none !important; } }
 
-
-
 @media screen and (min-width: 416px) and (max-width: 605px) {
   .frame-Pos {
     display: none; }
@@ -930,10 +908,9 @@ a[href^="https://maps.google.com/maps"] {
   #contactBox h1:nth-child(1)::after {
     margin-top: 2em;
     margin-left: -7.9em; }
-  .notification{
-   top:1em;
-   font-weight:700;
-  }
+  .notification {
+    top: 1em;
+    font-weight: 700; }
   .post-margin {
     margin: 0 0.5em 0 5em !important;
     position: absolute;
@@ -1056,7 +1033,7 @@ a[href^="https://maps.google.com/maps"] {
     font-size: 10px !important; } }
 
 @media (max-width: 800px) and (orientation: landscape) {
-.rotate {
+  .rotate {
     position: fixed;
     background: #212121 url(./components/resources/rotate.png) no-repeat center;
     background-size: 20% auto;
@@ -1066,14 +1043,9 @@ a[href^="https://maps.google.com/maps"] {
     bottom: 0;
     z-index: 9999999999999;
     display: block;
-    opacity: 1 !important;
-} 
-
-.bg-tags, .bottom-tags, #landscapeView{
-   display: none;
-}
-}
-
+    opacity: 1 !important; }
+  .bg-tags, .bottom-tags, #landscapeView {
+    display: none; } }
 
 @media screen and (min-width: 801px) and (max-width: 1025px) {
   .App {
@@ -1141,9 +1113,31 @@ a[href^="https://maps.google.com/maps"] {
   .externalLinks {
     font-size: 10px !important; } }
 
-@media screen and (min-width: 1024px ){
-  .media-content { width: 51% }
+@media screen and (min-width: 1024px) {
+  .media-content {
+    width: 51%; } }
+
+@media screen and (min-width: 1919px ){
+  .st0 { width: 41.5% !important ;
+         height: 80% !important;
+  }
 }
+
+@media screen and (min-width: 1919px ){
+  .leftZone {
+         top: 25em;
+  }
+
+  .projectsBox, .post-margin, #singlePost {
+   height: 820px !important;
+
+  }
+
+  .post-margin{
+    margin: 0 0.5em 0 20em !important;
+  }
+}
+
 
 @media screen and (min-width: 2559px) {
   .navBar {
@@ -1206,9 +1200,8 @@ a[href^="https://maps.google.com/maps"] {
   .button.is-medium {
     font-size: 2.5rem; }
   .media-content {
-    font-size: 27px; 
-    width: 51%;
-  }
+    font-size: 27px;
+    width: 51%; }
   .image img {
     margin: 2.5em 0; }
   .tag:not(body).is-large {
@@ -1218,6 +1211,4 @@ a[href^="https://maps.google.com/maps"] {
   .columns.is-mobile > .column.is-three-fifths {
     width: 70%; }
   .menu-list a {
-    font-size: 2em; } 
-}
-   
+    font-size: 2em; } }

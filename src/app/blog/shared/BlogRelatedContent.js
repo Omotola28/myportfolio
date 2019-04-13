@@ -2,6 +2,7 @@ import React from 'react'
 import Markdown from 'react-markdown'
 import {Loader} from './../../../components/Loader';
 import { connect } from 'react-redux';
+import Avatar from './../../../components/resources/avatar.png';
 
 class BlogRelatedContent extends React.Component {
    constructor() {
@@ -16,7 +17,7 @@ class BlogRelatedContent extends React.Component {
           :  <article className="media">
               <div className="media-left">
                 <figure className="image is-64x64">
-
+                  <img alt="avatar" src={Avatar}/>
                 </figure>
               </div>
               <div className="media-content">

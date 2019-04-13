@@ -1,5 +1,6 @@
 import React from 'react'
 import Markdown from 'react-markdown'
+import Avatar from './../../../components/resources/avatar.png';
 
 
 class BlogContent extends React.Component {
@@ -9,7 +10,7 @@ class BlogContent extends React.Component {
       <article className="media">
       <div className="media-left">
       <figure className="image is-64x64">
-      <img src={this.props.author.fields.avatar.fields.file.url + '?w=64&h=64'} alt="Omotola" />
+      <img alt="avatar" src={Avatar}/>
       </figure>
       </div>
       <div className="media-content">

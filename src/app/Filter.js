@@ -26,7 +26,7 @@ class Filter extends React.Component {
             </a>
           </div>
           <div className="tags has-addons level-item">
-            <a onClick={() => this.props.handleFilter('How-To')}>
+            <a onClick={() => this.props.handleFilter('HowTo')}>
               <span className="tag is-large">Category</span>
               <span className="tag is-link is-large">How-To</span>
             </a>

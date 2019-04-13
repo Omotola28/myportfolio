@@ -3,13 +3,13 @@ import SkillBars from './skills/SkillsBars';
 import Background from './layout/Background';
 
 const SKILLS = [
-  {type: "Communication", level: 20},
-  {type: "HTML", level: 50},
-  {type: "CSS", level: 52},
-  {type: "JavaScript", level: 42},
-  {type: "Java", level: 35},
-  {type: "Python", level: 36.3},
-  {type: "React.js", level: 25}
+  {type: "Communication", level: 60},
+  {type: "HTML", level: 80},
+  {type: "CSS", level: 80},
+  {type: "JavaScript", level: 70},
+  {type: "Java", level: 60},
+  {type: "PHP", level: 65},
+  {type: "React.js", level: 68}
 ];
 
 const Skills = () => {
@@ -20,11 +20,11 @@ const Skills = () => {
 				<div className='tl pa3 textZone w-40 leftZone' id='skillsBox'>
 				    <h1 className='f1'>{'Skills & Experience'}</h1>
 				    <p>
-					    Languages I have experiencing writing include HTML&CSS, Java, Javascript,
-					    PHP and some frameworks like Bootstrap, tachyons. Most of which were derived
+					    Languages I have experience writing HTML&CSS, Java, Javascript,
+					    PHP and some frameworks like Bootstrap, tachyons etc. Most of which were derived
 					    from projects at university. I am proficient with Git, Vim and I have some fundamental
 					    knowledge in languages like Python and C++ but I have not implemented any solutions using 
-					    these languages that is not to say I do not plan to.
+					    these languages, although I plan on doing so.
 				    </p>
 				    <p>
 					    I am currently exploring the use of ReactJs and NodeJs. This portfolio was built using

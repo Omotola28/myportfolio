@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
               { name: 'theme-color', content: 'yellow, gray and black' },
               { name: 'Omotola Shogunle', content: 'Omotola Shogunle\'s personal wedsite, portfolio, blog, tutorials on all things programming languages,concepts'},
               { name: 'languages', content: 'html, css, python, JavaScript, react' },
+              { name: 'p:domain_verify', content: 'b0b7327bfec7351bd84907ea143b002ch' },
             ]}
             script={[
               { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'},
