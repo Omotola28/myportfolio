@@ -13,12 +13,13 @@ import initialState from './store/initialState'
 // Redux Store
 import { Provider } from 'react-redux';
 import { configureStore } from './store/configureStore';
-import { loadBlog } from './store/Blog';
+import { loadBlog, relatedLinks } from './store/Blog';
 
 const history = createHistory();
 
 const store = configureStore(history, initialState);
 store.dispatch(loadBlog())
+store.dispatch(relatedLinks())
 
 
 ReactDOM.render((

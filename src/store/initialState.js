@@ -3,7 +3,8 @@ export default {
   	loading:false,
   	limit: 5,
     posts: [],
-    filter: ''
+    filter: '',
+    data:[]
   },
   contact: {
   	statusCode: 0

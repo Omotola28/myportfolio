@@ -82,7 +82,7 @@ class Blog extends React.Component {
   }
 }
 function mapStateToProps(state, ownProps) {
-  return {
+    return {
     blog: state.blog,
     limit: state.blog.limit,
     filter: state.blog.filter
