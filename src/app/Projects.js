@@ -20,7 +20,7 @@ class Projects extends React.Component {
                     <article className="tile is-child box">
                              <p className="title has-text-left">Photosynthesis Game</p>
                              <p className="subtitle has-text-justified">This was an assignment given to build a game to teach primary school kids 
-                             an science related topic. The came was built with Java, JavaFX, using design patterns like Factory,
+                             an science related topic. The game was built with Java, JavaFX, using design patterns like Factory,
                              Command, Delegation etc. </p>
                              <figure className="image is-4by3">
                                <img alt='Photosynthesis game' src={GameImage}/>

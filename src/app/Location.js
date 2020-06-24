@@ -218,7 +218,6 @@ class Location extends Component {
 				 <div className='infoMap'>
 				 	<p>Omotola Shogunle,</p>
 				 	<p>Salford, Manchester</p>
-				 	<p>Gerald Rd,</p>
 				    <span>{'@:'}</span>
 				    <span>{'omotolashogunle@gmail.com'}</span>
 				 </div>

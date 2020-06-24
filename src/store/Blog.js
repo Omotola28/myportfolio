@@ -2,8 +2,10 @@ import * as contentful from 'contentful'
 import * as actions from './blog/actions'
 import { client } from './contentfulClientApi'
 
+const regex = /-([A-Za-z0-9]*)+\_/;
+
 const splitUrl = (string) => {
-  let str = string.split('=')[1];
+  let str = string.split(regex)[1];
   return str;
 }
 
