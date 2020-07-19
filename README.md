@@ -13,6 +13,9 @@ Once yarn is installed
 
 Using `yarn install`
 
+## Request for .env file from Developer
+
+You would need a .env file to contribute to the project, so please request this from me @ omotolashogunle@gmail.com
 
 ## **Available Scripts**
 
