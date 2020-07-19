@@ -19,19 +19,21 @@ class ButtonCount extends React.Component {
 
     addCountInteraction = (e, btnId) => {
       const count = 1;
-      const dataObj = {data: {id: '', photosynthesis: {count: 0}}, id: '', ad: {count: 0}};
+      const dataObj = {buttonData: {data: {id: '', photosynthesis: {counter: 0, count: 0}}, id: '', ad: {counter: 0, count: 0}}};
       let noOfCount = 0;
       
       switch(btnId) {
         case 'box1':
-          noOfCount = this.props.buttonData.photosynthesis.count + count;
-          Object.assign(dataObj,{data: {id: btnId, photosynthesis: {count: noOfCount }}});
+          noOfCount = this.props.buttonData.photosynthesis.counter + count;
+          Object.assign(dataObj, {buttonData: {data: {id: btnId, photosynthesis: {counter: noOfCount, count: noOfCount }}}});
+
+          
           this.props.dispatch(actions.storeData(dataObj));
           break;
 
         case 'box2':
-           noOfCount = this.props.buttonData.ad.count + count;
-           Object.assign(dataObj, {data: {id: btnId, ad: {counter: noOfCount, count: noOfCount }}});
+           noOfCount = this.props.buttonData.ad.counter + count;
+           Object.assign(dataObj, {buttonData: {data: {id: btnId, ad: {counter: noOfCount, count: noOfCount }}}});
 
            this.props.dispatch(actions.storeData(dataObj));
            break;
@@ -69,11 +71,11 @@ function mapStateToProps(state, ownProps) {
   return {
   	buttonData: {
   		photosynthesis:{
-  		    counter: state.buttonData.photosynthesis.count,
+  		    counter: state.buttonData.photosynthesis.counter,
   		    data: state.buttonData.photosynthesis.data
   		  },
   		ad:{
-  		    counter: state.buttonData.ad.count,
+  		    counter: state.buttonData.ad.counter,
   		    data: state.buttonData.ad.data
   	    }
   	}

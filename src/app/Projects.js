@@ -13,7 +13,6 @@ class Projects extends React.Component {
   }
 
   render() {
-    console.log(this.props.buttonData)
     return (
       <div>
          <PageHeader color="hero is-small" title="Projects Page" addonText="Improving one project at a time"></PageHeader>
@@ -86,11 +85,11 @@ function mapStateToProps(state, ownProps) {
   return {
     buttonData: {
       photosynthesis:{
-          counter: state.buttonData.photosynthesis.count,
+          counter: state.buttonData.photosynthesis.counter,
           data: state.buttonData.photosynthesis.data
         },
       ad:{
-          counter: state.buttonData.ad.count,
+          counter: state.buttonData.ad.counter,
           data: state.buttonData.ad.data
         }
     }
