@@ -2,7 +2,6 @@ import * as types from './projectTypes'
 
 
 export function storeData(data) {
-	//console.log(data.buttonData.);
 	let obj ={};
 	switch(data.buttonData.data.id){
 		case 'box1':

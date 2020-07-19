@@ -8,7 +8,7 @@ export function buttonData(state=initialState.buttonData, action) {
         return{
           ...state,
           ad: {
-            counter: action.obj === undefined ? 0 : action.obj.counter,
+            counter: action.obj === undefined ? 0 : action.obj.count,
             data: action.obj
           }
         };
@@ -16,7 +16,7 @@ export function buttonData(state=initialState.buttonData, action) {
       return {
         ...state,
         photosynthesis: {
-            counter: action.obj === undefined ? 0 : action.obj.counter,
+            counter: action.obj === undefined ? 0 : action.obj.count,
             data: action.obj
         }
       };

@@ -10,21 +10,6 @@ class ButtonCount extends React.Component {
 		//this.addCountInteraction = this.addCountInteraction.bind(this);
 	}
 
-/*	
-	export function storeCount(count) {
-		switch(data.data.id){
-			case 'box1':
-			   return { type: types.ADD_COUNT_PHOTOSYNTHESIS, data};
-			   break;
-			case 'box2':
-			   return { type: types.ADD_COUNT_ADVERTISEMENT, data};
-			   break;
-			default:
-			   return null;
-		}
-	 
-	}
-*/
 	componentWillMount(){
 		let savedCount = loadState();
 
@@ -34,27 +19,20 @@ class ButtonCount extends React.Component {
 
     addCountInteraction = (e, btnId) => {
       const count = 1;
-      const dataObj = {buttonData: {data: {id: '', photosynthesis: {counter: 0, count: 0}}, id: '', ad: {counter: 0, count: 0}}};
+      const dataObj = {data: {id: '', photosynthesis: {count: 0}}, id: '', ad: {count: 0}};
       let noOfCount = 0;
       
       switch(btnId) {
         case 'box1':
-          //console.log(this.props);
-         //noOfCount = noOfCount + count;
-          noOfCount = this.props.buttonData.photosynthesis.counter + count;
-        // const object2 = Object.assign({c: 4, d: 5}, object1);
-          Object.assign(dataObj, {buttonData: {data: {id: btnId, photosynthesis: {counter: noOfCount, count: noOfCount }}}});
-
-          //console.log(dataObj);
+          noOfCount = this.props.buttonData.photosynthesis.count + count;
+          Object.assign(dataObj,{data: {id: btnId, photosynthesis: {count: noOfCount }}});
           this.props.dispatch(actions.storeData(dataObj));
           break;
 
         case 'box2':
-           noOfCount = this.props.buttonData.ad.counter + count;
-       //   // const object2 = Object.assign({c: 4, d: 5}, object1);
-           Object.assign(dataObj, {buttonData: {data: {id: btnId, ad: {counter: noOfCount, count: noOfCount }}}});
+           noOfCount = this.props.buttonData.ad.count + count;
+           Object.assign(dataObj, {data: {id: btnId, ad: {counter: noOfCount, count: noOfCount }}});
 
-           //console.log(dataObj);
            this.props.dispatch(actions.storeData(dataObj));
            break;
         case '':
@@ -62,8 +40,6 @@ class ButtonCount extends React.Component {
         default:
           return null;
       }
-
-     
 
      }
 
@@ -76,7 +52,6 @@ class ButtonCount extends React.Component {
      
 
 	render() {
-	//	{console.log(this.props)}
 	return(
 		<div className="clapEffect">
 			<div className="clickButton">
@@ -91,15 +66,14 @@ class ButtonCount extends React.Component {
 
 }
 function mapStateToProps(state, ownProps) {
- // console.log(state);
   return {
   	buttonData: {
   		photosynthesis:{
-  		    counter: state.buttonData.photosynthesis.counter,
+  		    counter: state.buttonData.photosynthesis.count,
   		    data: state.buttonData.photosynthesis.data
   		  },
   		ad:{
-  		    counter: state.buttonData.ad.counter,
+  		    counter: state.buttonData.ad.count,
   		    data: state.buttonData.ad.data
   	    }
   	}
