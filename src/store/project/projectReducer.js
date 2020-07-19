@@ -1,10 +1,8 @@
 import initialState from '../../store/initialState';
 import * as types from './projectTypes';
-//
  
 
 export function buttonData(state=initialState.buttonData, action) {
-  //console.log(action);
   switch(action.type) {
     case types.ADD_COUNT_ADVERTISEMENT: 
         return{
