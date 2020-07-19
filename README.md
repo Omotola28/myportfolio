@@ -8,13 +8,11 @@ If you don't' have yarn installed on your computer you should download it from 
 
 Once yarn is installed
 
----
 
 ## **Install exsisting packages**
 
 Using `yarn install`
 
----
 
 ## **Available Scripts**
 
