@@ -42,7 +42,7 @@
     "jquery": "3.5.0",
     "json-loader": "^0.5.7",
     "mailgun-js": "^0.22.0",
-    "marked": "^0.4.0",
+    "marked": "^0.7.0",
     "material-design-icons": "^3.0.1",
     "mo-js": "^0.288.2",
     "moment": "^2.22.2",
