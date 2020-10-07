@@ -1,8 +1,7 @@
-/*global google*/
 import React, { Component } from 'react';
 import {GoogleApiWrapper} from 'google-maps-react';
-
-
+import './location/Location.css'
+/*global google*/
 
 class Location extends Component {
 	componentDidMount(){
@@ -217,7 +216,8 @@ class Location extends Component {
 			<div id='mapBox'>
 				 <div className='infoMap'>
 				 	<p>Omotola Shogunle,</p>
-				 	<p>Salford, Manchester</p>
+				 	<p>Manchester</p>
+				 	<p>United Kingdom</p>
 				    <span>{'@:'}</span>
 				    <span>{'omotolashogunle@gmail.com'}</span>
 				 </div>

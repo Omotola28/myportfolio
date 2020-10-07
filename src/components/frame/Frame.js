@@ -5,11 +5,11 @@ import './Frame.css';
 
 const Frame = (props) => {
 	return(
-		<div className="column">
-			<div className="frame-Pos">
+		<div >
+			<div >
 				<object>
 					<embed src={frame} width="100%" height="100%"></embed>
-					<img alt="omotola" id="image" src={props.img}/>
+					
 				</object>
 			</div>
 		</div>

@@ -1,18 +1,26 @@
 @import url(~bulma/css/bulma.css);
-@import url(~/bulma-extensions/dist/bulma-extensions.min.css);
-body, html {
+
+body {
   margin: 0;
   padding: 0;
-  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 
+              'Segoe UI', 'Roboto', 'Oxygen',
+              'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+               sans-serif;
   background: #FFFFFF;
   overflow: hidden;
-  display: block; }
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 li {
   list-style-type: none; }
 
 .links {
-  color: #bec105; }
+  color: #f1c700; 
+  font-weight: 900;
+}
 
 buttons {
   cursor: pointer; }

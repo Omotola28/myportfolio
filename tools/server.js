@@ -1,7 +1,7 @@
 import express from 'express';
 import webpack from 'webpack';
 import path from 'path';
-import config from '../webpack.config.dev';
+import config from '../webpack.config';
 import open from 'open';
 import Mailgun from 'mailgun-js';
 import bodyParser from 'body-parser';
@@ -34,8 +34,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.get('*', function(req, res) {
   res.sendFile(path.join( __dirname, '../public/index.html'));
@@ -65,10 +65,6 @@ app.post('/inbox', (req,res) => {
 
    
 })
-
-
-
-
 
 app.listen(port, function(err) {
   if (err) {

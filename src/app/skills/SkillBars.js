@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Skills.css';
 
 class SkillBars extends Component {
   constructor(props) {
@@ -17,10 +18,9 @@ class SkillBars extends Component {
     const { hue, saturation, skills } = this.props;
 
     return(  
-      <div className="column">
-        <div className={`skillsBar ${collapsed ? 'collapsed' : ''}`}>
-          <h1 className='f1'>{'Skill Bars'}</h1>
-          <ul className="skills">
+        <div className={`${collapsed ? 'collapsed' : ''}`}>
+          <h1 className='skill-h1 skill-bar-fontSize'>{'Skill Bar Level'}</h1>
+          <ul className="skill-bars">
             {skills.map((skill, index) => 
               <li
                 key={skill.type}
@@ -31,8 +31,6 @@ class SkillBars extends Component {
             )}
           </ul>
         </div>
-      </div>
-     
     );
   }
 }

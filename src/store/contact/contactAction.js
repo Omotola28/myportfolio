@@ -13,4 +13,3 @@ export function emailResetState() {
   return { type: types.SEND_MAIL_RESET}
 }
 
-

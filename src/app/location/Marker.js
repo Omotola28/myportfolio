@@ -8,7 +8,7 @@ Marker.propTypes = {
 
 class Marker extends Component {
 	componentDidUpdate(prevProps) {
-    if ((this.props.map !== prevProps.map)  {
+    if (this.props.map !== prevProps.map){
         this.renderMarker();
     }
   }

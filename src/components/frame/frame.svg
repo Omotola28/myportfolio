@@ -16,22 +16,13 @@
 			-o-animation: dash 2s linear forwards;
 			-moz-animation:dash 2s linear forwards;
 			animation: dash 2s linear forwards;
-      width: 52%;
-      height: 100%;
 		}
- 
-   @media screen and (min-width: 1919px ){
-     .st0 { width: 41.5% !important;
-         height: 80% !important;
-     }
-   }
 
-   
 		@-webkit-keyframes dash {
 			from{ stroke-dashoffset:2500;}
 			to {stroke-dashoffset:0;}
 		}
 	</style>
 </defs>
-<rect x="0" y="0" class="st0"/>
+<rect x="0" y="0" class="st0" width="52%" height="100%"/>
 </svg>

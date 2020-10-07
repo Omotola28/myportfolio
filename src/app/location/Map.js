@@ -1,20 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-Map.propTypes = {
-  google: PropTypes.object,
-  zoom: PropTypes.number,
-  initialCenter: PropTypes.object
-}
-Map.defaultProps = {
-  zoom: 10,
-  // Salford, by default
-  initialCenter: {
-    lat: 53.487523,
-    lng: -2.290126
-  }
-}
 
 class Map extends Component {
  
@@ -29,5 +15,18 @@ class Map extends Component {
       <div ref="map" style={mapStyle}>I should be a map!</div>
     );
   }
+}
+Map.propTypes = {
+    google: PropTypes.object,
+    zoom: PropTypes.number,
+    initialCenter: PropTypes.object
+}
+
+Map.defaultProps = {
+    zoom: 10,
+    initialCenter: {
+      lat: 53.487523,
+      lng: -2.290126
+    }
 }
 export default Map
