@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 70 54" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+		.st0{
+		    fill: none;
+		    stroke-width:0.3;
+		    stroke:#000000;
+		    stroke-miterlimit: 10;
+			stroke-dasharray:2500;
+			stroke-dashoffset: 0;
+			-webkit-animation: dash 2s linear forwards;
+			-o-animation: dash 2s linear forwards;
+			-moz-animation:dash 2s linear forwards;
+			animation: dash 2s linear forwards;
+		}
+
+		@-webkit-keyframes dash {
+			from{ stroke-dashoffset:2500;}
+			to {stroke-dashoffset:0;}
+		}
+	</style>
+</defs>
+<rect x="0" y="0" class="st0" width="52%" height="100%"/>
+</svg>
