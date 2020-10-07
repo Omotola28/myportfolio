@@ -11,7 +11,7 @@ const Navigation = ({onRouteChange}) => {
 				<NavLink to="/code" exact id="code" rel="code" activeClassName="active"><i className="material-icons md-30"></i></NavLink>
 				<NavLink to="/inbox" exact id="inbox" rel="inbox" activeClassName="active"><i className="material-icons md-30"></i></NavLink>
 				<NavLink to="/blog" exact id="blog" rel="blog" activeClassName="active"><i className="material-icons md-30"></i></NavLink>
-			</nav>
+    </nav>
 		</div>	
 	);
 		
