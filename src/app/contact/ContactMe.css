@@ -1,0 +1,198 @@
+  
+ #contactBox {
+     width: 85%;
+     margin: 0 0 0 5rem; 
+
+ }
+ 
+ #contactBox::before, #contactBox h1:nth-child(1)::after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -16.5em;
+    margin-top: -1em;
+} 
+  
+  #contactBox h1:nth-child(1)::after {
+    content: '</h1>';
+    margin-top: 3em;
+    margin-left: -11em; }
+    
+  #contactBox h1{
+    text-align: left;
+    font-size: 2.5em;
+    margin: 20px 0;
+  }  
+
+  form div {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative; }
+
+  label.clip { 
+      display: none;
+  }
+
+  .pseudoBtn {
+    color: #000000;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 12px 12px;
+    border: 1px solid #000000;
+    margin-top: 25px;
+    float: left;
+    border-radius: 3px; }
+  
+  .pseudoBtn {
+    white-space: nowrap; }
+  
+  .pseudoBtn:hover {
+    background: #000000;
+    color: #f4c900; }
+  
+  .box-left {
+    width: 49%;
+    float: left;
+    clear: none;
+    margin-left: 1%; }
+  
+  form input[type="text"], form input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  
+  .textarea {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px; }
+  
+  .fixposition {
+    margin-left: 1%; }
+  
+  .emailMsg {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  
+  .notification.is-primary {
+    background-color: #f4c900;
+    color: #000;
+    width: 50%;
+    top: 10.5em;
+    left: 10em; }
+  
+  .is-whitesmoke {
+    background-color: #e7e7e7;
+    display: none; }
+
+  .contact-body .right-zone, .contact-body .left-zone {
+      width: 50%;
+  }
+
+  .help.is-danger {
+    text-align: left;
+  }
+/**
+MEDIA QUERIES FOR CONTACT PAGE
+**/
+
+
+@media only screen and (max-width: 1400px){
+    #contactBox::before {
+        margin-left: -14.8em;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 1025px){
+    .contact-body .right-zone{ display: none}
+    .contact-body .left-zone {
+        width: 100%;
+    }
+
+    #contactBox::before {
+        margin-left: -22em;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+    #contactBox{
+        margin: 0 0 0 3em;
+    }
+
+    #contactBox::before {
+        margin-left: -16em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    #contactBox h1:nth-child(1)::after {
+        margin-top: 2.4em;
+        margin-left: -9em;
+    }
+
+    #contactBox::before {
+        margin-left: -11em;
+    }
+
+    .contact-page-leftZone {
+        margin: 0 10px 0 !important; 
+    }
+
+    #contactBox h1 {
+        font-size: 2em;
+    }
+
+    #contactBox{
+        margin: 0;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    #contactBox::before {
+        margin-left: -10em;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #contactBox::before {
+        margin-left: -8.2em;
+    }
+
+    #contactBox h1:nth-child(1)::after {
+        margin-top: 2em;
+        margin-left: -7.8em;
+    }
+
+    #contactBox h1 {
+        font-size: 1.7em;
+    }    
+
+}

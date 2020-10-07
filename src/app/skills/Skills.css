@@ -1,0 +1,116 @@
+.skills {
+    text-align: justify;
+    font-size: 12px;
+    width: 40%;
+}
+
+.bars {
+    text-align: justify;
+    width: 35%
+}
+
+.skills p {
+    margin: 1em 0 0 0;
+}
+
+.skills::before, .skills h1:nth-child(1)::after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute; }
+  
+.skills h1:nth-child(1)::after {
+    content: '</h1>';
+    margin: 2.8em 0 0 -19em; }
+
+
+.skill-bars li {
+  display: block;
+  position: relative;
+  background-color: #888;
+  color: #fff;
+  margin: 10px 0;
+  transition: width 300ms ease-in-out;
+}
+
+.collapsed .skill-bars li{
+    width: 0 !important; }
+  
+.skill-bars li p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold; }
+  
+.skill-bars li span {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    width: 30px;
+    top: 11px;
+    text-align: right;
+    font-weight: normal;
+    color: #fff;
+    font-size: 11px; 
+}
+
+.skill-h1 {
+    line-height: 2em;
+}
+
+.lift-up-div {
+    width: 40%;
+    height: 18em;
+}
+
+.skill-bar-fontSize {
+   font-size: 2.5em;
+}
+
+/**
+MEDIA QUERIES FOR SKILL PAGE
+**/
+@media only screen and (max-width: 1025px){
+    .right-zone, .left-zone {
+        margin: 0 0 0 5em;
+    }
+
+    .right-zone > img {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .mb-left-zone {
+        display: none;
+    }
+
+    .mb-right-zone {
+        display: block !important;
+        width: 75%;
+        margin: 0 !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .skill-bar-fontSize{
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+    .mb-right-zone {
+        width: 90%;
+        margin: 0;
+    }
+
+    .skill-bars li p{
+        padding: 5px;
+    }
+    
+}

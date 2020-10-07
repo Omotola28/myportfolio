@@ -1,0 +1,127 @@
+.about-me {
+    text-align: justify;
+    font-size: 12px;
+    width: 40%;
+}
+
+.about-paragraph p {
+    margin: 0 0 10px 0;
+}
+
+.about-me::before, .about-me h1:nth-child(1)::after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute; }
+  
+.about-me h1:nth-child(1)::after {
+    content: '</h1>';
+    margin: 2.8em 0 0 -10em; }
+
+.about-paragraph {
+    margin-top: 2em;
+}
+
+.about-h1 {
+    line-height: 2em;
+}
+
+
+/**
+MEDIA QUERIES FOR ABOUT PAGE
+**/
+@media only screen and (max-width: 1025px){
+    .right-zone, .left-zone {
+        margin: 0 0 0 5em;
+    }
+
+    .right-zone > img {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .right-zone {
+        display: none;
+    }
+
+    .about-me {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 460px){
+
+    .top-tags {
+        top: 4em;
+        left: -10px; 
+    }
+
+    .font-size {
+        font-size: 2.9em;
+    }
+    
+    .left-zone {
+        width:95%;
+        margin:auto;
+    }
+    
+    .bottom-tags {
+        left: -40px;
+    }
+
+    .text-zone h2 {
+          line-height: 1.3em;
+    } 
+
+}
+
+@media only screen and (max-width: 375px){
+    .nav-bar {
+        width: 100vh;
+        height: 65px;
+        min-height: 0px;
+    }
+
+    .font-size {
+        font-size: 2.3em;
+    }
+
+    .text-zone h2 {
+        letter-spacing: 1.5px; }
+
+    .bottom-tags {
+        left: -40px;
+    }
+
+    .about-me {
+        width: 95%;
+    }
+
+    .about-me h1:nth-child(1)::after{
+        margin: 2.5em 0 0 -7.7em;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+
+
+    .text-zone h2 {
+        letter-spacing: 1px;
+    }
+
+    .about-me {
+        font-size: 10px;
+    }
+
+    .top-tags, .bottom-tags {
+        font-size: 15px;
+    }
+
+    .about-me h1:nth-child(1)::after{
+        margin: 2.5em 0 0 -7.2em;
+    }
+
+}

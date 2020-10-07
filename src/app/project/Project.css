@@ -1,0 +1,100 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      'year1 year1 year1 year1 year1'
+      'appHmq appHmq appHmq moreComing moreComing'
+      'appHmq appHmq appHmq moreComing moreComing'
+      'appHmq appHmq appHmq moreComing moreComing'
+      'year0 year0 year0 year0 year0'
+      'gameJava gameJava adWeb adWeb adWeb'
+      'gameJava gameJava adWeb adWeb adWeb'
+      'gameJava gameJava adWeb adWeb adWeb';
+    margin-left: 5em;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+}
+  
+.year1 { grid-area: year1; }
+  
+.appHmq { grid-area: appHmq; }
+  
+.moreComing { grid-area: moreComing; }
+  
+.year0 { grid-area: year0; }
+
+.year0 p, .year1 p {
+    padding: 0 0 0 10px;
+}
+
+.year-banner {
+    background-color: #FFF4C2 !important;
+    border: 1px solid #06070E;
+    /*clip-path: polygon(0 0, 50% 0%, 50% 0%, 40% 100%, 0 100%);*/
+    margin-top: 10px;
+    height: 90px;
+}
+  
+.gameJava { grid-area: gameJava; }
+  
+.adWeb { grid-area: adWeb; }
+
+#app-gif {
+    width: 50%;
+    margin: auto
+}
+
+/**
+MEDIA QUERIES FOR SKILL PAGE
+**/
+@media only screen and (max-width: 1025px){
+    .tile:not(.is-child) {
+        display: block; 
+    }
+
+    .button.is-medium {
+        font-size: 0.8rem;
+    }
+    
+    .card-footer{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 3.5fr 3fr 0.3fr 3.5fr 3.5fr;
+        grid-template-areas:
+          "year1 year1 year1 year1"
+          "appHmq appHmq appHmq appHmq"
+          "moreComing moreComing moreComing moreComing"
+          "year0 year0 year0 year0"
+          "gameJava gameJava gameJava gameJava"
+          "adWeb adWeb adWeb adWeb";
+      }
+}
+
+@media only screen and (max-width: 600px){
+
+    .grid-container {
+       grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr 0.3fr 0.3fr;
+       margin: 5em 0 0 0;
+    }
+
+    .button.is-medium {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+  

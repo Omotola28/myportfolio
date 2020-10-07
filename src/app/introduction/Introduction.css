@@ -1,0 +1,167 @@
+
+/**
+INTRODUCTION STYLING
+**/
+  
+  .right-zone > img {
+      width: 100%; 
+  }
+  
+  .line-height {
+    line-height: 0.9; 
+    text-align: justify;
+  }
+  
+  .font-size {
+      font-size: 3.5em; }
+  
+  .text-zone::before, .text-zone h1:nth-child(3)::after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px; }
+  
+  .text-zone h1:nth-child(3)::after {
+    content: '</h1>';
+    margin-left: 10px;
+    margin-top: 17px; }
+  
+  .text-zone::after {
+    margin-left: 25em;
+    margin-top: -1.7em; }
+  
+  .text-zone h2 {
+    color: #f4c900;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px; }
+  
+  .social-media{
+      display:flex;
+      justify-content: flex-start;
+  }
+
+  .social-icon{
+      width: 20px;
+      margin: 10px 15px 10px 0;
+  }
+
+/** 
+MEDIA QUERIES FOR INTRODUCTION
+**/  
+
+@media only screen and (max-width: 1025px){
+    .right-zone, .left-zone {
+        margin: 0 0 0 5em;
+    }
+
+    .right-zone > img {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .right-zone {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+	.right-zone {
+        display: none;
+    }
+
+    .left-zone {
+        margin: 1rem;
+    }
+
+    .font-size {
+        font-size: 3em;
+    }
+
+    .top-tags {
+        left: 50px; 
+      }
+      
+      .bottom-tags {
+        left: 20px;
+      }
+}
+
+@media only screen and (max-width: 500px){
+    .left-zone {
+        margin: 5rem;
+    }
+
+    .text-zone h2 {
+        letter-spacing: 0.5px;
+    }
+
+    .font-size {
+        font-size: 2.6em;
+    }
+
+}
+
+
+@media only screen and (max-width: 460px){
+
+    .top-tags {
+        top: 4em;
+        left: -10px; 
+      }
+
+      .font-size {
+        font-size: 2.9em;
+    }
+      
+      .bottom-tags {
+        left: -40px;
+      }
+
+      .left-zone {
+          margin: 0;
+      }
+
+      .text-zone h2 {
+          line-height: 1.3em;
+      }
+
+}
+
+@media only screen and (max-width: 360px){
+
+    .font-size {
+        font-size: 2.3em;
+    }
+
+    .text-zone h2 {
+        letter-spacing: 1.5px; }
+
+    .bottom-tags {
+        left: -40px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .nav-bar {
+        width: 100vh;
+        height: 65px;
+        min-height: 0px;
+    }
+
+    .font-size {
+        font-size: 1.5em;
+    }
+
+    .text-zone h2 {
+        letter-spacing: 1px;
+    }
+
+    .bottom-tags {
+        left: 0px;
+    }
+}
