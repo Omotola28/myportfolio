@@ -1,9 +1,6 @@
 import express from 'express';
-import webpack from 'webpack';
 import path from 'path';
-import config from '../webpack.config';
 import open from 'open';
-import Mailgun from 'mailgun-js';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
 import nodemailerTransport from 'nodemailer-mailgun-transport';
@@ -22,23 +19,16 @@ const auth ={
 const nodemailerMailgun = nodemailer.createTransport(nodemailerTransport(auth));
 
 
-const port = 3000;
+const port = 80;
 const app = express();
-const compiler = webpack(config);
 
+app.use(express.static('dist'));
 
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: config.output.publicPath
-}));
-
-app.use(require('webpack-hot-middleware')(compiler));
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
 
 app.get('*', function(req, res) {
-  res.sendFile(path.join( __dirname, '../public/index.html'));
+  res.sendFile(path.join( __dirname, '../dist/index.html'));
 });
 
 app.post('/inbox', (req,res) => {
@@ -68,9 +58,9 @@ app.post('/inbox', (req,res) => {
 
 app.listen(port, function(err) {
   if (err) {
-    console.log(err.response);
+    console.log(err);
   } else {
-    console.log("Server is running");
-    open(`http://localhost:${port}`);
+    open(`167.99.89.227:${port}`);
+    console.log("Running......");
   }
 });
