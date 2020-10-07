@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
               { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
               { name: 'theme-color', content: 'yellow, gray and black' },
               { name: 'Omotola Shogunle', content: 'Omotola Shogunle\'s personal wedsite, portfolio, blog, tutorials on all things programming languages,concepts'},
-              { name: 'languages', content: 'html, css, python, JavaScript, react' },
+              { name: 'languages', content: 'html, css, flutter, JavaScript, react' },
             ]}
             script={[
               { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'},

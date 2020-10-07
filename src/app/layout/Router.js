@@ -26,4 +26,3 @@ const Router = () => {
 } 
 export default Router
 
-/*<Route path="/skills" exact strict render={(props) => <SkillBars {...props} hue={"49"} saturation={"100"} skills={SKILLS}/>}/>*/

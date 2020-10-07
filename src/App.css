@@ -6,9 +6,6 @@
   top: 17em;
   left: 10em; }
 
-.fontS {
-  font-size: 3.5em; }
-
 .top-tags {
   bottom: auto;
   top: 0px; }
@@ -31,6 +28,9 @@
 /*Introduction.css*/
 .lineH {
   line-height: 0.3; }
+
+.fontS {
+    font-size: 3.5em; }
 
 .textZone::before, .textZone h1:nth-child(3)::after {
   content: '<h1>';
@@ -84,7 +84,7 @@
   background: #000000;
   width: 65px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   z-index: 3;
@@ -235,6 +235,7 @@
   margin: 0 0 30px 0;
   padding: 0;
   width: calc(100% - 100px); }
+
 
 .skills li {
   display: block;
