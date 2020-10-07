@@ -22,7 +22,7 @@ Creat a .babelrc file and add the following
 `
 
 ### .env file config
-Create .env file and add
+> Create .env file and add
 REACT_APP_MAILGUN_API_KEY= <your-api-key>
 REACT_APP_MAILGUN_DOMAIN= <yourdomain.com>
 REACT_APP_DOMAIN_EMAIL=<youremail@gmail.com>
