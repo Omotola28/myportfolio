@@ -1,6 +1,0 @@
-export const SEND_MAIL_SUCCESS = "SEND_MAIL_SUCCESS"
-export const SEND_MAIL_FAILED = "SEND_MAIL_FAILED"
-export const SEND_MAIL_RESET = "SEND_MAIL_RESET"
-
-
-
