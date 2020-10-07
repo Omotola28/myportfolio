@@ -23,11 +23,11 @@ Creat a .babelrc file and add the following
 
 ### .env file config
 > Create .env file and add
-REACT_APP_MAILGUN_API_KEY= <your-api-key>
-REACT_APP_MAILGUN_DOMAIN= <yourdomain.com>
-REACT_APP_DOMAIN_EMAIL=<youremail@gmail.com>
-REACT_APP_GOOGLE_APIKEY=<your-google-api-key>
-NODE_ENV=development
+> REACT_APP_MAILGUN_API_KEY= <your-api-key>
+> REACT_APP_MAILGUN_DOMAIN= <yourdomain.com>
+> REACT_APP_DOMAIN_EMAIL= <youremail@gmail.com>
+> REACT_APP_GOOGLE_APIKEY=<your-google-api-key>
+> NODE_ENV=development
 
 ### Run project in production mode
 `npm run build`
