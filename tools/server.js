@@ -3,7 +3,6 @@ import webpack from 'webpack';
 import path from 'path';
 import config from '../webpack.config';
 import open from 'open';
-import Mailgun from 'mailgun-js';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
 import nodemailerTransport from 'nodemailer-mailgun-transport';

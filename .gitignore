@@ -24,5 +24,10 @@ yarn-error.log*
 #css
 src/**/*.css
 
+<<<<<<< HEAD
+#.env
+.env
+=======
 #env
 .env
+>>>>>>> production
